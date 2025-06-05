@@ -18,11 +18,11 @@ date: 2025-06-05
 
 [Homebrew](https://brew.sh/ja/) は macOS や Linux でパッケージ管理を行うためのツールであり，以下のコマンドで簡単にインストールできる．
 <!---
-![](./image/homebrew-logo.png)
+![](./images/homebrew-logo.png)
 --->
 <figure style="text-align:center;">
-  <img src="./image/homebrew-logo.png" width="50%">
-  <figcaption style="font-size:20px; margin-top:5px;">Fig: Image of view on jupyter-notebook</figcaption>
+  <img src="./images/homebrew-logo.png" width="50%">
+  <figcaption style="font-size:20px; margin-top:5px;">Fig: Homebrew</figcaption>
 </figure>
 
 ```bash
