@@ -22,5 +22,5 @@ macOSやLinuxでの開発環境構築に必要なツールのインストール�
 
 1. [🖥️ Terminalの開き方](./sec/terminal.md)
 1. [🍺 Homebrewのインストール](./sec/homebrew.md)
-1. [pyenvのインストール](./sec/pyenv.md)
-1. [pyenv&pipenvを利用した仮装環境](./sec/pyenv_pipenv.md)
+1. [🐍 pyenvのインストール](./sec/pyenv.md)
+1. [🐍 pyenv&pipenvを利用した仮装環境](./sec/pyenv_pipenv.md)

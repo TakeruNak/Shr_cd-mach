@@ -1,15 +1,15 @@
 ---
 title: "pyenvとpipenvの使い方"
-excerpt: "Pythonの仮装環境を簡単に管理する方法"
+excerpt: "Pythonの仮想環境を簡単に管理する方法"
 author: Takeru Nakashima
 collection: portfolio
 date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
 [🏠 Home](../environment.md)
-# pyenv & pipenv 仮装環境．
+# pyenv & pipenv 仮想環境．
 
-`pipenv`は，**仮装環境の作成と依存パッケージ管理を，一括で行えるコマンド**.
+`pipenv`は，**仮想環境の作成と依存パッケージ管理を，一括で行えるコマンド**.
 > 🔧 「`virtualenv` + `pip` + `requirements.txt`」 を 1 つにまとめた便利なツール.
 
 ## ✅ 主な特徴
