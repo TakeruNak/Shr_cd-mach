@@ -7,7 +7,7 @@ date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
 [🏠 Home](../environment.md)
-# 🍺 Homberbrewのインストール
+# 🍺 Homebrewのインストール
 
 ##  Homebrewとは？
 
