@@ -15,3 +15,8 @@ date: 2025-06-06
     - [ASEの利用方法(./doc/ase/ase.md)](./doc/ase/ase.md)
     - [OpenMXの利用方法(執筆中)](./doc/openmx/openmx.md)
     - [VESTAの利用方法(執筆予定)](./doc/vesta/vesta.md)
+
+<!---
+- 参考文献の共有
+    - [基礎的な知識の参考図書](./doc/reference/list.md)
+--->
