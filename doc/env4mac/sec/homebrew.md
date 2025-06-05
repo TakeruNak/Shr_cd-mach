@@ -17,14 +17,13 @@ date: 2025-06-05
 ## インストール方法
 
 [Homebrew](https://brew.sh/ja/) は macOS や Linux でパッケージ管理を行うためのツールであり，以下のコマンドで簡単にインストールできる．
-
-![](./image/homebrew-logo.png)
 <!---
+![](./image/homebrew-logo.png)
+--->
 <figure style="text-align:center;">
-  <img src="./image/image_view_ase.png" width="70%">
+  <img src="./image/homebrew-logo.png" width="50%">
   <figcaption style="font-size:20px; margin-top:5px;">Fig: Image of view on jupyter-notebook</figcaption>
 </figure>
---->
 
 ```bash
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
