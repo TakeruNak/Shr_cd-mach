@@ -6,7 +6,7 @@ collection: portfolio
 date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
-[🏠 Home](../environment.md)
+[🏠 Home](../../README.md)
 # 環境構築ガイド
 macOSやLinuxでの開発環境構築に必要なツールのインストール手順を示す．
 本コラム内では，主に以下に挙げているものを中心にそれらの導入と簡単な使用方法を記述する．

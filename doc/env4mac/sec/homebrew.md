@@ -19,7 +19,7 @@ date: 2025-06-05
 [Homebrew](https://brew.sh/ja/) は macOS や Linux でパッケージ管理を行うためのツールであり，以下のコマンドで簡単にインストールできる．
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 もし，インストールに失敗した場合などは，多くの場合 **Xcode のバージョンが古い**ことが原因と考えられる．Xcodeのアップデートを行ってみてください．
@@ -27,7 +27,7 @@ date: 2025-06-05
 Homebrew のインストールが完了したら，正しくインストールされているか以下のコマンドを入力して，確認してみてください．
 
 ```bash
-brew doctor
+$ brew doctor
 
 # 正しくインストールされている場合、以下のようなメッセージが表示されます。
 # Your system is ready to brew.
