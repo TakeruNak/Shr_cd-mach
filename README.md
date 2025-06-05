@@ -9,4 +9,4 @@ date: 2025-06-06
 
 本リポジトリは，cd-mach groupで利用するテキストを入れていきます．
 # 目次
-- [./environment](./environment/environment.md)
+- [仮装環境に関するテキスト(./environment/environment.md)](./environment/environment.md)
