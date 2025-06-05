@@ -1,6 +1,6 @@
 ---
-title: homebrew.md
-excerpt: <excerpt or description on this script>
+title: "pyenvとpipenvの使い方"
+excerpt: "Pythonの仮装環境を簡単に管理する方法"
 author: Takeru Nakashima
 collection: portfolio
 date: 2025-06-05

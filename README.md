@@ -9,7 +9,7 @@ date: 2025-06-06
 
 本リポジトリは，cd-mach groupで利用するテキストを入れていきます．
 # 目次
-- [仮装環境に関するテキスト(./doc/env4mac/environment.md)](./doc/env4mac/environment.md)
+- [Python 仮装環境に関するテキスト(./doc/env4mac/environment.md)](./doc/env4mac/environment.md)
 - [ASEの利用方法(./doc/ase/ase.md)](./doc/ase/ase.md)
 - [OpenMXの利用方法(執筆中)](./doc/openmx/openmx.md)
-- VESTAの利用方法(執筆予定)
+- [VESTAの利用方法(執筆予定)](./doc/vesta/vesta.md)

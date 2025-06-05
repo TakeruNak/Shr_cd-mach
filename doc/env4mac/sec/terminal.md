@@ -1,5 +1,5 @@
 ---
-title: homebrew.md
+title: terminalの起動
 excerpt: <excerpt or description on this script>
 author: Takeru Nakashima
 collection: portfolio

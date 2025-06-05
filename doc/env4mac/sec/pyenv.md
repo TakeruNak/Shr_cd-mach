@@ -1,13 +1,13 @@
 ---
-title: homebrew.md
-excerpt: <excerpt or description on this script>
+title: pyenv.md
+excerpt: "pyenvのインストールと使い方"
 author: Takeru Nakashima
 collection: portfolio
 date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
 
-# pyenvのインストール
+# pyenvとは？
 `pyenv`は，**複数のpython versionを簡単に切り替えて管理することができるソフト（Python バージョンマネージャー）**.
 
 ## 🐍 pyenv の役割

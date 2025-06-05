@@ -1,6 +1,6 @@
 ---
 title: "Openmx Calculation note"
-excerpt: "第一原理計算プログラムの一種であるOpenMXを用いた計算演習を通して，第一原理計算の肌感覚を掴む．<br/><img src='/images/500x300.png'>"
+excerpt: "第一原理計算プログラムの一種であるOpenMXを用いた計算演習を通して，第一原理計算の肌感覚を掴む."
 collection: portfolio
 data: 2025-04-08 10:52
 ---
