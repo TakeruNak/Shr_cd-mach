@@ -19,23 +19,23 @@ OpenMXのインストール方法は，公式サイトの[Download](https://www.
 
 ```bash
 # 0. src directoryを作成
-$ mkdir -p ~/src
-$ cd ~/src
+mkdir -p ~/src
+cd ~/src
 
 # 1. Ver. 3.9をインストールし，ソースコードを展開
-$ wget https://www.openmx-square.org/openmx3.9.tar.gz
-$ tar -xvf openmx3.9.tar.gz
+wget https://www.openmx-square.org/openmx3.9.tar.gz
+tar -xvf openmx3.9.tar.gz
 
 # 2. Ver. 3.9のREADME.txtをダウンロードし，
 #    README.txtを参照してインストール手順を確認
-$ wget https://www.openmx-square.org/bugfixed/21Oct17/README.txt
+wget https://www.openmx-square.org/bugfixed/21Oct17/README.txt
 
 # 3. patchデータのダウンロード
-$ wget https://www.openmx-square.org/bugfixed/21Oct17/patch3.9.9.tar.gz
-$ mv ./patch3.9.9.tar.gz openmx3.9/source
-$ cd openmx3.9/source
-# tar zxvf patch3.9.9.tar.gz
-# mv kpoint.in ../work/
+wget https://www.openmx-square.org/bugfixed/21Oct17/patch3.9.9.tar.gz
+mv ./patch3.9.9.tar.gz openmx3.9/source
+cd openmx3.9/source
+tar zxvf patch3.9.9.tar.gz
+mv kpoint.in ../work/
 
 # 4. makefileを以下のように編集してください．
 CC = mpicc -O3 -Xpreprocessor -fopenmp \
