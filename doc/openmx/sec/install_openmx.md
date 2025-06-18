@@ -18,7 +18,10 @@ brew install open-mpi libomp libxc scalapack fftw gcc llvm
 OpenMXのインストール方法は，公式サイトの[Download](https://www.openmx-square.org/)からダウンロードし，マニュアルのインストルール手順に従ってインストールする．`wget`コマンドを用いて，以下のようにインストールすることも可能である．
 
 ```bash
-# 0. src directoryを作成
+# 0. homebrewの最新版への更新とsrc directoryを作成
+brew update
+brew doctor
+
 mkdir -p ~/src
 cd ~/src
 
@@ -38,6 +41,11 @@ tar zxvf patch3.9.9.tar.gz
 mv kpoint.in ../work/
 
 # 4. makefileを以下のように編集してください．
+#    makefileの場所は，openmx3.9/source/makefileです．
+ls ./makefile  # makefileが存在することを確認
+
+# vim ./makefile を実行して，以下のように編集してください．
+# CC, FC, LIBの設定を行います．
 CC = mpicc -O3 -Xpreprocessor -fopenmp \
      -I/opt/homebrew/Cellar/libomp/20.1.7/include \
      -Wno-error=implicit-function-declaration -Dnosse \
@@ -53,11 +61,13 @@ LIB= -L/opt/homebrew/Cellar/scalapack/2.2.2/lib -lscalapack \
      -L/opt/homebrew/Cellar/llvm/20.1.7/lib -lomp -lpthread \
      -L/opt/homebrew/Cellar/gcc/15.1.0/lib/gcc/15 -lgfortran
 
+# CC のincludeディレクトリの指定部分に，-fcommon オプションを追加します．
+
 # 修正前）CC    += -I$(LIBELPADIR)
 CC    += -I$(LIBELPADIR) -fcommon
 
 # 5. makeコマンドでコンパイル
-make clean
+make clean # 念のために，以前のビルドをクリーンアップ
 make all
 
 # 6. インストール完了
@@ -66,6 +76,8 @@ cd ../work
 ls -l openmx # OpenMXの実行ファイルが生成されていることを確認
 
 ```
+
+homebrew のパッケージを利用しているので，パッケージのバージョンは各自で確認して，修正してください．
 
 ## ✅ 使用例
 
