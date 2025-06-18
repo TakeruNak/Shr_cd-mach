@@ -10,8 +10,9 @@ date: 2025-06-10
 
 ## 使用するパッケージのインストール
 ```
-brew install open-mpi libomp libxc scalapack fftw gcc llvm vesta
+brew install open-mpi libomp libxc scalapack fftw gcc llvm vesta wget
 # libxcはとりあえず，入れるだけ入れておきましょう．
+# すでにインストールしているパッケージは省略してください．
 ```
 
 ## 🔧 インストール方法
