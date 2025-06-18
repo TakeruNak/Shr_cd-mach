@@ -26,7 +26,7 @@ date: 2025-06-05
 </figure>
 
 ```bash
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 もし，インストールに失敗した場合などは，多くの場合 **Xcode のバージョンが古い**ことが原因と考えられる．Xcodeのアップデートを行ってみてください．
@@ -34,32 +34,32 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 Homebrew のインストールが完了したら，正しくインストールされているか以下のコマンドを入力して，確認してみてください．
 
 ```bash
-$ brew doctor
+brew doctor
 
 # 正しくインストールされている場合、以下のようなメッセージが表示されます。
 # Your system is ready to brew.
 ```
 #### 実行例
 ```bash
-$ brew doctor
+brew doctor
 # Your system is ready to brew.
 
 # wgetのインストール
-$ brew install wget
+brew install wget
 
 # gnuplotのインストール
-$ brew install gnuplot
+brew install gnuplot
 
 # pyenvのインストール
-$ brew install pyenv
+brew install pyenv
 
 # gitのインストール
-$ brew install git
+brew install git
 
 # インストールしされたパッケージの確認
-$ brew list
+brew list
 # インストールされたパッケージのアップデート
-$ brew update
+brew update
 ```
 
 
