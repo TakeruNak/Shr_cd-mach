@@ -10,7 +10,7 @@ date: 2025-06-10
 
 ## 使用するパッケージのインストール
 ```
-brew install open-mpi libomp libxc scalapack fftw gcc llvm
+brew install open-mpi libomp libxc scalapack fftw gcc llvm vesta
 # libxcはとりあえず，入れるだけ入れておきましょう．
 ```
 
@@ -114,8 +114,13 @@ mpirun -np 1 ~/src/openmx3.9/work/openmx ./input/H2O.dat -nt 1 > ./output.std
 chmod 744 go.sh
 ./go.sh
 ```
-
 初めての`mpirun`コマンドの実行では，実行許可の確認が求められることがあります．その場合は，許可を与えてください．
+
+
+計算が終わると，`output.std`を含む出力ファイルが生成されます．
+試しに，`vim h2o.out`などで出力ファイルを確認してみましょう．`open h2o.tden.cube`などをterminal上で実行すると，VESTAなどの可視化ツールでH2Oのsimulationで求めたtotal electron densityを確認できます．他にもファイルの中身を確認してみてください．
+
+(*詳しい説明．丁寧な文章の推敲はいづれします．*）
 
 ## 注意点
 OpenMXのインストールは，macOSのバージョンや使用するコンパイラによって異なる場合がある．特に，最新のmacOSではコンパイルエラーが発生することがあるため，注意が必要．以下の点に留意．
