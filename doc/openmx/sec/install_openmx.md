@@ -12,6 +12,10 @@ date: 2025-06-10
 OpenMXのインストール方法は，公式サイトの[Download](https://www.openmx-square.org/)からダウンロードし，マニュアルのインストルール手順に従ってインストールする．`wget`コマンドを用いて，以下のようにインストールすることも可能である．
 
 ```bash
+# 0. src directoryを作成
+$ mkdir -p ~/src
+$ cd ~/src
+
 # 1. Ver. 3.9をインストールし，ソースコードを展開
 $ wget https://www.openmx-square.org/openmx3.9.tar.gz
 $ tar -xvf openmx3.9.tar.gz

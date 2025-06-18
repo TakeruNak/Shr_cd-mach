@@ -50,22 +50,22 @@ date: 2025-06-05
 
 ```bash
 # 1. python v.3.13 を pyenv を利用して，インストール．
-$ pyenv install 3.13
+pyenv install 3.13
 
 # 2. python v.3.13 を pyenv で利用を宣言する．
-$ pyenv local 3.13
+pyenv local 3.13
 
 # 3. python v.3.13 を使うことを pipenv で宣言．Pipfile などが作成される．
-$ pipenv --python 3.13 # このコマンドはなくても，実際にいはうまくいく．
+pipenv --python 3.13 # このコマンドはなくても，実際にいはうまくいく．
 
 # 4. pipenv を用いて，numpy をインストール．
-$ pipenv install numpy
+pipenv install numpy
 
 # 5. pipenv の仮装環境を有効化
-$ pipenv shell
+pipenv shell
 
 # 6. test.py ファイルを python で実行
-$ python test.py
+python test.py
 ```
 ここで使用する `test.py` を念のために以下のように提案しておく：
 
