@@ -8,6 +8,11 @@ date: 2025-06-10
 ---
 
 
+## 使用するパッケージのインストール
+```
+brew install open-mpi libomp libxc scalapack fftw gcc
+```
+
 ## 🔧 インストール方法
 OpenMXのインストール方法は，公式サイトの[Download](https://www.openmx-square.org/)からダウンロードし，マニュアルのインストルール手順に従ってインストールする．`wget`コマンドを用いて，以下のようにインストールすることも可能である．
 
