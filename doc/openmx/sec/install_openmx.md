@@ -6,9 +6,15 @@ collection: portfolio
 date: 2025-06-10
 # Copyright (c) 2025-06-10 <Takeru Nakashima>. All rights reserved.
 ---
+[🏠 Home](../openmx.md)
 
+# OpenMXのインストールガイド
 
-# 🍺 使用するパッケージのインストール  
+次の２つの手順に従ってOpenMXをmacに導入してみてください：
+1. homebrewを用いて，openmxをmacOS上で動かすのに必要なパッケージをインストール，
+1. OpenMXのコンパイルの設定ファイル（makefile）を編集・実行．
+
+## 🍺 使用するパッケージのインストール  
 
 OpenMXをmacOSで動かすためには，以下のパッケージをhomebrewを用いてインストールする必要がある．
 
@@ -32,7 +38,7 @@ brew install open-mpi libomp libxc scalapack fftw gcc llvm vesta wget
 > ここでは不要ですが，入れておいて損はないので，入れておいてください．
 > すでにインストールしているパッケージは省略してください．
 
-# 🔧 インストール方法
+## 🔧 インストール方法（makefileの編集）
 OpenMXのインストール方法は，公式サイトの[Download](https://www.openmx-square.org/)からダウンロードし，マニュアルのインストルール手順に従ってインストールする．`wget`コマンドを用いて，以下のようにインストールすることも可能です（wgetコマンドは，urlからファイルから直接ダウンロードするためのコマンドです）．以下の手順に従って，OpenMXをインストールしてください．
 
 ```bash
@@ -97,7 +103,7 @@ ls -l openmx # OpenMXの実行ファイルが生成されていることを確�
 
 homebrew のパッケージを利用しているので，パッケージのバージョンは各自で確認して，修正してください．
 
-# ✅ 使用例
+## ✅ 使用例
 
 入力ファイルを用意し，OpenMXを実行してみましょう．以下は，水分子の構造最適化の計算例です．以下の手順に従って，計算を行ってみてください．難しい場合は，[OpneMXの公式ドキュメントやマニュアル]((https://www.openmx-square.org/openmx_man3.9jp/node1.html))を参照してください．
 
