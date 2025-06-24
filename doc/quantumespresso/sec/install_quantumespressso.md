@@ -17,11 +17,15 @@ Quantum ESPRESSOをmacOSで動かすためには，以下のパッケージをho
 | 1 | `open-mpi` | MPI計算を行うためのOpen MPIライブラリ |
 | 2 | `gcc` | GNU Compiler Collection (GCC) |
 | 3 | `veclibfort` | Fortranのベクトルライブラリ |
+| 4 | `wget` | ファイルをダウンロードするためのツール |
 
-1. Homebrewを使用して必要なパッケージをインストールします。
+Homebrewを使用して必要なパッケージをインストールする．
    ```bash
-   brew install open-mpi gcc veclibfort
+   brew install open-mpi gcc veclibfort wget
    ```
+
+もし，Homebrewがインストールされていない場合は，次のHomebrewのインストールについて記述した[🍺 ページ 🍺](../../env4mac/sec/homebrew.md)を参照してインストールを行うこと．
+
 
 ## 🔧 インストール方法
 
