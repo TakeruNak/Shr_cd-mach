@@ -30,19 +30,36 @@ Homebrewを使用して必要なパッケージをインストールする．
 ## 🔧 インストール方法
 
 ```
+# 0. Quantum ESPRESSOのインストールディレクトリを作成
 mkdir -p ~/src/quantum-espresso
-cd ~/src/quantum-espresso/
 
+# 1. Quantum ESPRESSOのソースコードをダウンロード
+cd ~/src/quantum-espresso/
 wget https://www.quantum-espresso.org/rdm-download/488/v7-4-1/00e9e79464ea139d4bc84b2e452cb797/qe-7.4.1-ReleasePack.tar.gz
+
+# 2. ダウンロードしたファイルを解凍
 tar -xzf qe-7.4.1-ReleasePack.tar.gz
 cd qe-7.4.1
 
-# MPI version
+# 3. MPI versionのコンパイルを行うために必要な環境変数を設定
 ./configure MPIF90="mpif90" F90="gfortran" CC=gcc-15 CPP=cpp-15 LAPACK_LIBS="-L/opt/homebrew/Cellar/veclibfort/0.4.3/lib -lveclibFort -lblas -llapack"
 
-# Quantum ESPRESSOのコンパイル
+# 4. Quantum ESPRESSOのコンパイル
 make all
 
-# Quantum ESPRESSOのバイナリを確認
-ls -l bin
+# 5. install directoryの指定
+# makefileの中でPREFIXを指定することで，インストール先を変更できる．
+make install PREFIX=../
+
+# 6. Quantum ESPRESSOのバイナリを確認
+cd ../bin
+ls -l 
+# おそらく，pw.x, ph.x, etc. のようなバイナリファイルが表示されるはず．
 ```
+
+
+## 🧪 動作確認
+http://www.cmpt.phys.tohoku.ac.jp/~koretsune/SATL_qe_tutorial/
+などのチュートリアルを参考にして，動作確認を行ってください．
+
+**後々，ちゃんと本ページを書きます．**
