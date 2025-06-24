@@ -99,6 +99,10 @@ make install
 cd ../work
 ls -l openmx # OpenMXの実行ファイルが生成されていることを確認
 
+
+# 7. OpenMXの実行ファイルを確認
+# otool -L openmx
+
 ```
 
 homebrew のパッケージを利用しているので，パッケージのバージョンは各自で確認して，修正してください．

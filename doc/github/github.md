@@ -14,3 +14,6 @@ date: 2025-06-12
 
 
 ## まず初めに何をすればいいの？
+
+## Github copilot
+学生，教師はgithub copilotの[Copilot Pro](https://docs.github.com/ja/education/about-github-education)を無料で利用できる．興味があれば，[手順](https://docs.github.com/ja/education/about-github-education)に従って導入してみてください．
