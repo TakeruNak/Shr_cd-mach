@@ -29,13 +29,15 @@ Homebrewを使用して必要なパッケージをインストールする．
 
 ## 🔧 インストール方法
 
+Quantum ESPRESSOのインストールには，downloadサイトへの登録が必要です．[downloadサイト](https://www.quantum-espresso.org/download-page/)にアクセスし，アカウントを作成してから，以下の手順に従ってください.
+
 ```
 # 0. Quantum ESPRESSOのインストールディレクトリを作成
 mkdir -p ~/src/quantum-espresso
 
 # 1. Quantum ESPRESSOのソースコードをダウンロード
 cd ~/src/quantum-espresso/
-wget https://www.quantum-espresso.org/rdm-download/488/v7-4-1/00e9e79464ea139d4bc84b2e452cb797/qe-7.4.1-ReleasePack.tar.gz
+wget [Quantum ESPRESSOのSRCのダウンロードリンク（downloadページからコピー）]
 
 # 2. ダウンロードしたファイルを解凍
 tar -xzf qe-7.4.1-ReleasePack.tar.gz
