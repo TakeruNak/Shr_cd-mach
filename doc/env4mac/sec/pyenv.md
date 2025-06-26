@@ -37,7 +37,13 @@ brew install pyenv
 インストールが終了した後に，以下のコマンドを入力して，pyenvの環境を設定してください．
 ```
 # ... pyenv の設定を.zshrcに追加 ...
-cat <<'EOF' >> ~/.zshrc
+# Editorを開いて.zshrcにpyenvの設定を追加
+# ここではvimを使っているが，好きなEditorを使ってください．
+
+vim ~/.zshrc
+
+# 以下の内容を.zshrcに追加
+
 # ... pyenv ...
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:\$PATH"
