@@ -59,6 +59,9 @@ brew install pyenv
 # gitのインストール
 brew install git
 
+# git-openのインストール
+brew install git-open
+
 # インストールしされたパッケージの確認
 brew list
 # インストールされたパッケージのアップデート
@@ -92,7 +95,6 @@ brew update
 - Homebrew は `/opt/homebrew`（Apple Silicon）または `/usr/local`（Intel Mac）にインストールされる．
 - Homebrew でインストールしたツールは，システムの Python や Git などと**競合せずに並行して使用**できる．
 - 開発環境をコードベースで再現したい場合にも便利（例：`brew bundle`）
-
 
 
 ---
