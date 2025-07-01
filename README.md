@@ -22,9 +22,9 @@ date: 2025-06-06
   * [x] [東大物性研 SystemB の利用方法](./doc/supercom/systemb.md)
   * [ ] [九州大学 Genkai の利用方法](./doc/supercom/genkai.md)
   * [ ] [Science Tokyo Tsubame の利用方法](./doc/supercom/tsubame.md)
-<!---
 - 研究関連のテキスト
   * [/] [研究で重要なこと](./doc/research/research_technique.md)
+  <!---
   * [研究計画書の書き方](./doc/research_plan/research_plan.md)
   * [研究発表の仕方](./doc/presentation/presentation.md)
   * [研究室のルール](./doc/rules/rules.md) --->
