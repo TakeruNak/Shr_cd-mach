@@ -24,7 +24,7 @@ date: 2025-06-06
   * [ ] [Science Tokyo Tsubame の利用方法](./doc/supercom/tsubame.md)
 <!---
 - 研究関連のテキスト
-  * [/] [研究で重要なこと](./doc/research/research_mindset.md)
+  * [/] [研究で重要なこと](./doc/research/research_technique.md)
   * [研究計画書の書き方](./doc/research_plan/research_plan.md)
   * [研究発表の仕方](./doc/presentation/presentation.md)
   * [研究室のルール](./doc/rules/rules.md) --->

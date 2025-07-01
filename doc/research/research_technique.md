@@ -1,5 +1,5 @@
 ---
-title: mindset.md
+title: research_technique.md
 excerpt: <excerpt or description on this script>
 author: Takeru Nakashima
 collection: portfolio
@@ -8,7 +8,7 @@ date: 2025-07-01
 ---
 
 # 研究で重要なこと
-本校では研究を行う上で重要なことに関して，以下の項目に分けて説明する．
+本稿では研究を行う上で重要なことに関して，以下の項目に分けて説明する．
 
 1. [研究論文の構成理解](./sec/paper_structure.md)
 2. [研究データ管理](./sec/data_management.md)
