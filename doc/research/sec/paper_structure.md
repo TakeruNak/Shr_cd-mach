@@ -7,7 +7,7 @@ date: 2025-07-01
 # Copyright (c) 2025-07-01 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../research_technique.md)
 
 # 研究論文の構成理解
 
@@ -107,4 +107,4 @@ Discussionでは，Resultsで得られた結果の解釈をさらに深め，研
     * 次に取り組むべき課題
 -->
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../research_technique.md)
