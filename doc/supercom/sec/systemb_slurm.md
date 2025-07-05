@@ -7,7 +7,7 @@ date: 2025-06-10
 # Copyright (c) 2025-06-10 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../systemb.md)
+[🏠 Home](systemb.md)
 
 # Queue system (Slurm Workload Manager) の利用．
 大規模計算機は多くの研究者によって利用されるが，実際に使えるCPU・GPU/nodeの数には限りがある．そこで，一般に複数人で共有されるような大規模計算機には，queue systemという計算シミュレーションの実行順序を管理するようなスケジュール機能が導入されている．
@@ -83,4 +83,4 @@ $$ N_{MPI} \times N_{OpenMP}. = 128 \times N_{Node}.$$
 を満たすように，それぞれのパラメタを設定するのが良い．
 **ただし，並列数をあまり上げすぎてもcpu間，node間のデータ通信時間が増えてしまう問題もあるため，並列数は徐々に増やしていくのが良い．**
 
-[🏠 Home](../systemb.md)
+[🏠 Home](systemb.md)

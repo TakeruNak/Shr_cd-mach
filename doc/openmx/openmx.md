@@ -5,7 +5,7 @@ collection: portfolio
 data: 2025-04-08 10:52
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/README.md)
 
 # OpenMX 利用ガイド
 

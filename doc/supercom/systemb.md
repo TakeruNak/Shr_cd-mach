@@ -7,6 +7,7 @@ date: 2025-06-10
 # Copyright (c) 2025-06-10 <Takeru Nakashima>. All rights reserved.
 ---
 
+
 [🏠 Home](../../README.md)
 
 # 物性研 SystemB 

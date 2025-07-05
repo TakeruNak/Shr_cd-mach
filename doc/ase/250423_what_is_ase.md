@@ -7,7 +7,7 @@ date: 2025-04-28
 # Copyright (c) 2025-04-28 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../ase.md)
+[🏠 Home](ase.md)
 
 # Atomic Simulation Environment (ASE)
 [Atomic Simulation Environment (ASE)](https://wiki.fysik.dtu.dk/ase/index.html)は，Pythonで記述された原子スケールのシミュレーション用ライブラリ．
@@ -107,4 +107,4 @@ ASEでは様々な古典力場を利用することが可能である．以下�
 | Morse | 単純な二体間ポテンシャル、金属や分子に使える | ase.calculators.morse.MorsePotential |
 | Universal Force Field (UFF) | 汎用（ほぼ全元素に対応） | ase.calculators.uff.UFF（ただし標準ではない、追加モジュール要）|
 
-[🏠 Home](../ase.md)
+[🏠 Home](ase.md)

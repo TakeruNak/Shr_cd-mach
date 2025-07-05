@@ -77,4 +77,4 @@ $ pyenv local 3.13
 $ python --version
 ```
 
-[🏠 Home](../environment.md)
+[🏠 Home](environment.md)

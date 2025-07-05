@@ -24,7 +24,7 @@ Homebrewを使用して必要なパッケージをインストールする．
    brew install open-mpi gcc veclibfort wget
    ```
 
-もし，Homebrewがインストールされていない場合は，次のHomebrewのインストールについて記述した[🍺 ページ 🍺](../../env4mac/sec/homebrew.md)を参照してインストールを行うこと．
+もし，Homebrewがインストールされていない場合は，次のHomebrewのインストールについて記述した[🍺 ページ 🍺](homebrew.md)を参照してインストールを行うこと．
 
 
 ## 🔧 インストール方法

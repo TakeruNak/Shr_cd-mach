@@ -7,7 +7,7 @@ date: 2025-04-23
 # Copyright (c) 2025-04-23 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../ase.md)
+[🏠 Home](ase.md)
 
 # Visualization using Ase
 ASEを用いた構造の視覚化は，`ase.visualize`を利用する．
@@ -36,4 +36,4 @@ write("output/tmp.png", atoms, rotation="0x,0y,0z")
 Image(url="output/Si.png", width=200)
 ```
 
-[🏠 Home](../ase.md)
+[🏠 Home](ase.md)

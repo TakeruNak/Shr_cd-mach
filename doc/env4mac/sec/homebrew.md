@@ -6,7 +6,7 @@ collection: portfolio
 date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
-[🏠 Home](../environment.md)
+[🏠 Home](environment.md)
 # 🍺 Homebrewのインストール
 
 ##  Homebrewとは？
@@ -107,4 +107,4 @@ macにはdefaultでGitがインストールされていますが、最新バー�
 brew install git
 ```
 
-[🏠 Home](../environment.md)
+[🏠 Home](environment.md)

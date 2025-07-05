@@ -11,7 +11,7 @@ date: 2025-06-10
 
 # 各種計算ガイド
 
-1. [構造最適化計算．](./optimize.md)
-1. [Nudged Elastic Band (NEB) method 計算](./neb.md)
+1. [構造最適化計算．](optimize.md)
+1. [Nudged Elastic Band (NEB) method 計算](neb.md)
 
 [🏠 Home](../openmx.md)

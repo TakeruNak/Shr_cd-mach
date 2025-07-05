@@ -7,7 +7,7 @@ date: 2025-06-10
 # Copyright (c) 2025-06-10 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../systemb.md)
+[🏠 Home](systemb.md)
 
 # 物性研 SystemB へのログイン方法
 
@@ -43,4 +43,4 @@ ssh -i{ssh-key_path} {username}@ohtaka.issp.u-tokyo.ac.jp
 Windows利用者は，可能であれば Windows Terminal + WSL のセットアップを推奨．
 個人的には，[Windows Terminal + WSL](https://www.nedia.ne.jp/blog/tech/2022/06/07/19314)環境下で，Linuxコマンドを使えるようにすると便利だと思う．
 
-[🏠 Home](../systemb.md)
+[🏠 Home](systemb.md)

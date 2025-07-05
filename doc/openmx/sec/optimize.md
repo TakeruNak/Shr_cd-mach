@@ -7,7 +7,7 @@ date: 2025-06-10
 # Copyright (c) 2025-06-10 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](./calc_method.md)
+[🏠 Home](calc_method.md)
 
 # 構造最適化
 
@@ -43,4 +43,4 @@ MD.Opt.criterion            1.0e-4  # default=0.0003 (Hartree/Bohr)
 MD.Fixed.XYZ>
 ```
 
-[🏠 Home](./calc_method.md)
+[🏠 Home](calc_method.md)

@@ -5,6 +5,7 @@ collection: portfolio
 data: 2025-04-08 10:52
 ---
 
+
 [🏠 Home](../../README.md)
 
 # OpenMX 計算概論

@@ -7,7 +7,7 @@ date: 2025-06-10
 # Copyright (c) 2025-06-10 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](./calc_method.md)
+[🏠 Home](calc_method.md)
 
 # Nudged Elastic Band (NEB) method
 NEB計算と構造最適化計算の間には，共通したパラメタが存在する．
@@ -191,4 +191,4 @@ srun -n 16 --cpus-per-task=32 openmx c2h4.dat -nt 32
 sbatch job-opemx.sh
 ```
 
-[🏠 Home](./calc_method.md)
+[🏠 Home](calc_method.md)

@@ -6,7 +6,7 @@ collection: portfolio
 date: 2025-06-06
 # Copyright (c) 2025-06-06 <Takeru Nakashima>. All rights reserved.
 ---
-
+[[technique]]
 # 参考文献
 
 ## 🔰 (基礎) 数理物理学
