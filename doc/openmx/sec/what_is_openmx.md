@@ -5,7 +5,7 @@ collection: portfolio
 data: 2025-06-09
 ---
 
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/doc/openmx/openmx.md)
+[🏠 Home](../openmx.md)
 
 # OpenMXの基礎理論
 <a id="Openmxの基礎理論"></a>
@@ -47,4 +47,4 @@ data: 2025-06-09
 
 OpenMX は現在v.3.9まで出ており，最新のversionではBerry phaseを用いた巨視的分極率計算が可能であり，[日本語](https://www.openmx-square.org/openmx_man3.9jp/)・[英語](https://openmx-square.org/openmx_man3.9/index.html)両方のマニュアルも非常に充実している．基本わからないことなどは，マニュアルを一度参照してみると結構わかりやすい．
 
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/doc/openmx/openmx.md)
+[🏠 Home](../openmx.md)

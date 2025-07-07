@@ -6,7 +6,7 @@ collection: portfolio
 date: 2025-06-10
 # Copyright (c) 2025-06-10 <Takeru Nakashima>. All rights reserved.
 ---
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/doc/openmx/openmx.md)
+[🏠 Home](../openmx.md)
 
 # OpenMXのインストールガイド
 
@@ -163,4 +163,4 @@ OpenMXのインストールは，macOSのバージョンや使用するコンパ
 
 (最新のmacbookproだと，うまくコンパイルできないことが多いらしい．)
 
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/doc/openmx/openmx.md)
+[🏠 Home](../openmx.md)

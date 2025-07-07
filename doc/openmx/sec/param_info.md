@@ -5,7 +5,7 @@ collection: portfolio
 data: 2025-06-09
 ---
 
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/doc/openmx/openmx.md)
+[🏠 Home](../openmx.md)
 
 # 基本的なパラメタ設定の勘所・収束のスキル
 <a id="基本的なパラメタ設定の勘所・収束のスキル"></a>
@@ -97,4 +97,4 @@ $$= 1.0\times 10^{-3}/(100\times 30) [\rm{Hartree}]\simeq 1.0\times 10^{-7} [Har
   <figcaption style="font-size:20px; margin-top:5px;">図1: OpenMX VPS & PAO Tables</figcaption>
 </figure>
 
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/doc/openmx/openmx.md)
+[🏠 Home](../openmx.md)
