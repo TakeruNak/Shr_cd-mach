@@ -7,7 +7,7 @@ date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/README.md)
+[🏠 Home](../../README.md)
 
 # Python 環境構築ガイド
 macOSやLinuxでの開発環境構築に必要なツールのインストール手順を示す．
@@ -22,9 +22,9 @@ macOSやLinuxでの開発環境構築に必要なツールのインストール�
 |  pipenv |  python内でinstallするmoduleを管理する用の仮装環境を構築できるソフトウェア | -->
 
 
-1. [🖥️ Terminalの開き方](terminal.md)
-1. [🍺 Homebrewのインストール](homebrew.md)
-1. [🐍 pyenvのインストール](pyenv.md)
-1. [🐍 pyenv&pipenvを利用した仮装環境](pyenv_pipenv.md)
+1. [🖥️ Terminalの開き方](./sec/terminal.md)
+1. [🍺 Homebrewのインストール](./sec/homebrew.md)
+1. [🐍 pyenvのインストール](./sec/pyenv.md)
+1. [🐍 pyenv&pipenvを利用した仮装環境](./sec/pyenv_pipenv.md)
 
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/README.md)
+[🏠 Home](../../README.md)

@@ -6,7 +6,7 @@ collection: portfolio
 date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
-[🏠 Home](environment.md)
+[🏠 Home](../environment.md)
 # 🖥️ Terminalの起動
 macOSやLinuxでは，Terminalを使用してコマンドライン操作を行います，以下の手順でTerminalを起動してください．
 
@@ -30,4 +30,4 @@ macOSやLinuxでは，Terminalを使用してコマンドライン操作を行�
 を行ってみてください．
 
 
-[🏠 Home](environment.md)
+[🏠 Home](../environment.md)

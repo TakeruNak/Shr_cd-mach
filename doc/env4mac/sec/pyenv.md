@@ -6,6 +6,7 @@ collection: portfolio
 date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
+[🏠 Home](../environment.md)
 
 # pyenvとは？
 `pyenv`は，**複数のpython versionを簡単に切り替えて管理することができるソフト（Python バージョンマネージャー）**.
@@ -77,4 +78,4 @@ $ pyenv local 3.13
 $ python --version
 ```
 
-[🏠 Home](environment.md)
+[🏠 Home](../environment.md)

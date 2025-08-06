@@ -6,7 +6,7 @@ collection: portfolio
 date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
-[🏠 Home](environment.md)
+[🏠 Home](../environment.md)
 # pyenv & pipenv 仮想環境．
 
 `pipenv`は，**仮想環境の作成と依存パッケージ管理を，一括で行えるコマンド**.
@@ -92,4 +92,4 @@ print("Eigenvectors: ", eigenvectors)
 
 ```
 
-[🏠 Home](environment.md)
+[🏠 Home](../environment.md)
