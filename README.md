@@ -10,8 +10,8 @@ date: 2025-06-06
 本リポジトリは，cd-mach groupで利用するテキストを入れていきます．
 # 目次
 - 環境構築
-  * [Python 仮想環境に関するテキスト](./doc/env4mac/environment.md)
-  * [Githubの利用方法](./doc/github/github.md)
+  * [Python を利用した仮想環境](./doc/env4mac/environment.md)
+  * [Githubはどうやって使うの？](./doc/github/github.md)
 - 計算技術関連
   * [ASEの利用方法](./doc/ase/ase.md)
   * [OpenMXの利用方法](./doc/openmx/openmx.md)

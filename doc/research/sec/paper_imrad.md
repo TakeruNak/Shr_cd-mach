@@ -36,6 +36,7 @@ IMRaDとは，Introduction, Methods & Methodology, Results, and Discussionの頭
 読者の興味を惹くために，研究の意義となる部分を先行研究を調査することで示すのが一般的な方法である．
 
   - 研究の背景
+    - 研究意義
     * Literature Review（主題に関連する先行研究の調査)
       * 先行研究の調査結果
       * 先行研究の限界，問題点，不足点，課題etc.
@@ -47,7 +48,7 @@ IMRaDとは，Introduction, Methods & Methodology, Results, and Discussionの頭
 **Literature Reviewの結果から自身の研究の重要性と主題を述べる.**
 
 ## 🛠️  Methods & Methodology
-Methods & Methodologyでは，研究の具体的な対象と方法論を述べる．Introductionで抽象的な研究主題（Research Question）を述べた後，Methods & Methodologyでは，その研究主題を解決するためにどのような方法を用いるのかを具体的に述べる．
+Methods & Methodologyでは，研究の具体的な対象と方法論を述べる．Introductionで抽象的な研究主題（Research Question）を述べた後，Methods & Methodologyでは，その研究主題を解決するためにどのような対象と方法を用いるのかを具体的に述べる．
 
   * 研究の具体的対象
     * 研究の対象となるデータ，系，物質，現象
