@@ -6,6 +6,7 @@ collection: portfolio
 date: 2025-06-24
 # Copyright (c) 2025-06-24 <Takeru Nakashima>. All rights reserved.
 ---
+[🏠 Home](../quantumespressso.md)
 
 # Quantum ESPRESSSO のインストールガイド
 
@@ -65,3 +66,4 @@ http://www.cmpt.phys.tohoku.ac.jp/~koretsune/SATL_qe_tutorial/
 などのチュートリアルを参考にして，動作確認を行ってください．
 
 **後々，ちゃんと本ページを書きます．**
+[🏠 Home](../quantumespressso.md)

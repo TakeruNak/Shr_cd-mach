@@ -7,7 +7,7 @@ date: 2025-06-06
 # Copyright (c) 2025-06-06 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/README.md)
+[🏠 Home](../../../README.md)
 
 # Vesta
 VESTA は、結晶構造や分子構造の可視化と解析を行うためのソフトウェア．
@@ -28,4 +28,4 @@ EOF
 $ vesta
 ```
 
-[🏠 Home](03_permanent_notes/250605_cd-mb/environment_setting/README.md)
+[🏠 Home](../../../README.md)
