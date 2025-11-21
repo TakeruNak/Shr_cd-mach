@@ -15,6 +15,7 @@ date: 2025-06-06
 - 計算技術関連
   * [ASEの利用方法](./doc/ase/ase.md)
   * [OpenMXの利用方法](./doc/openmx/openmx.md)
+  * [Quantum ESPRESSOの利用法](./doc/quantumespresso/qe1.md)
   * [VESTAの利用方法](./doc/vesta/vesta.md)
   * [PhysBOの利用方法](./doc/physbo/physbo_guide.md)
   * [並列計算の利用方法](./doc/paralle_computing/parallel_computing_guide.md)
