@@ -1,0 +1,18 @@
+---
+title: what-is-qe.md
+excerpt: <excerpt or description on this script>
+author: Takeru Nakashima
+collection: portfolio
+date: 2026-03-30
+# Copyright (c) 2026-03-30 <Takeru Nakashima>. All rights reserved.
+---
+
+# 🐣 What is Quantum ESPRESSO?
+[Quantum ESPROSSO (QE)](http://dx.doi.org/10.1088/0953-8984/21/39/395502)は，Density Functional Theory (DFT, 密度汎関数理論）を基礎とし，Plane-wave method (平面波法）とPseudopotential method (擬ポテンシャル法）を中核とした，第一原理計算を行うためのソフトウェアパッケージ．
+
+イタリアで，元々個別に存在したプロジェクトコード群–PWscf(Plane-Wave Self-Consistent Field)がメイン–を統合して開発されたソフトウェアで，名前の由来は「opEn Source Package for Research in Electronic Structure, Simulation, and Optimization」の頭文字から来ている．　
+
+開発チームは，Scuola Internazionale Superiore di Studi Avanzati (SISSA)，Abdus Salam International Centre for Theoretical Physics (ICTP)，CINECA国立スーパーコンピューティングセンター，ローザンヌ連邦工科大学，Oden Institute for Computational Engineering and Sciences，テキサス大学オースティン校などが含まれ，イタリア国立研究評議会 (CNR) と提携している.
+
+-- [QE-web](https://www.quantum-espresso.org/manifesto/)
+
