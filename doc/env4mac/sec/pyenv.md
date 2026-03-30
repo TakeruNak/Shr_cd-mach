@@ -43,14 +43,11 @@ brew install pyenv
 
 vim ~/.zshrc
 
-# 以下の内容を.zshrcに追加
-
-# ... pyenv ...
+# 以下の内容を.zshrc末尾に追加
+# pyenv settings
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:\$PATH"
-eval "$(pyenv init --path)"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-EOF
 ```
 
 ## 🐍 pyenv の確認
