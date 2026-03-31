@@ -50,6 +50,20 @@ cd qe-7.4.1
 # 4. Quantum ESPRESSOのコンパイル
 make all
 
+# 4.1 もしコンパイルエラーが発生した場合は，エラーメッセージを確認し，必要に応じて環境変数やライブライのパスを修正．
+# 最近の場合だと，wannier90のコンパイルでエラーが出ることがある．その場合は，以下のようにして，wannier90のコンパイルを行う．
+# もしくは，wannier90のコンパイルをスキップすることも可能．
+
+# (wannier90をスキップの場合) PWscfと中核となるコードのコンパイルのみを以下のように行う．
+makw pwall
+
+# (wannier90をコンパイルする場合) wannier90を手動で再インストールして，コンパイルさせる．
+rm -rf external/wannier90
+# 手動でクローンする
+git clone -b v3.1.0 https://github.com/wannier-developers/wannier90.git external/wannier90
+# ここら辺の確認は，時間ができたらちゃんとやります．困ったら，wannier90に関しては，[Wannier90の公式サイト](https://wannier90.org/)を参照し，手でコンパイルするのが一番確実かもしれません．
+make all
+
 # 5. install directoryの指定
 # makefileの中でPREFIXを指定することで，インストール先を変更できる．
 make install PREFIX=../
@@ -58,6 +72,8 @@ make install PREFIX=../
 cd ../bin
 ls -l 
 # おそらく，pw.x, ph.x, etc. のようなバイナリファイルが表示されるはず．
+
+# 補足）PWscfに関する計算例は，PW directoryの中にあるexamplesディレクトリにいくつか入っているので，そちらを参考にするのも一つの手．
 ```
 
 
