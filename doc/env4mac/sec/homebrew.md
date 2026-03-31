@@ -85,8 +85,14 @@ brew update
 | GUIアプリのインストール | `brew install --cask google-chrome` |
 | パッケージの更新 | `brew upgrade` |
 | Homebrew自体の更新 | `brew update` |
+| 古いバージョンの削除 | `brew cleanup` |
+| 不要パッケージの削除 | `brew autoremove` |
+| パッケージに古いものがないか確認 | `brew outdated` |
+| キャッシュの削除 | `brew cleanup -s` |
 | パッケージのアンインストール | `brew uninstall git` |
 | インストール済み一覧の表示 | `brew list` |
+
+homebrewのパッケージは，一定期間ごとにmacOSのアップデートに伴い，更新されることが多い．定期的に `brew update` と `brew upgrade` を実行して，インストールしたパッケージを最新の状態に保つことをお勧め． 
 
 ---
 
