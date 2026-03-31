@@ -12,6 +12,7 @@ date: 2025-06-24
 # Quantum Espresso 利用ガイド
 
 1. [Quantum ESPRESSOのインストール](./sec/install_quantumespressso.md)
-2. [Quantum ESPRESSOとはなんぞや？](./sec/what_is_qe.md)
+2. [Quantum ESPRESSOとはなんぞや？](./sec/what-is-qe.md)
+3. [Quantum ESPRESSOで計算を実行してみよう](./sec/how-to-run-qe.md)
 
 [🏠 Home](../../README.md)

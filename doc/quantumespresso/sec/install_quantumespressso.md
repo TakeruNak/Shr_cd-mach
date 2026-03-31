@@ -1,6 +1,6 @@
 ---
 title: install_quantumespressso.md
-excerpt: <excerpt or description on this script>
+excerpt: Quantum ESPRESSOのインストール方法について説明します．
 author: Takeru Nakashima
 collection: portfolio
 date: 2025-06-24
@@ -25,7 +25,7 @@ Homebrewを使用して必要なパッケージをインストールする．
    brew install open-mpi gcc veclibfort wget
    ```
 
-もし，Homebrewがインストールされていない場合は，次のHomebrewのインストールについて記述した[🍺 ページ 🍺](homebrew.md)を参照してインストールを行うこと．
+もし，Homebrewがインストールされていない場合は，次のHomebrewのインストールについて記述した[🍺 ページ 🍺](../../env4mac/sec/homebrew.md)を参照してインストールを行うこと．
 
 
 ## 🔧 インストール方法

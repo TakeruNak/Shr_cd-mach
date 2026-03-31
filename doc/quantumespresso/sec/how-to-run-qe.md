@@ -1,6 +1,6 @@
 ---
-title: how-to-qe.md
-excerpt: <excerpt or description on this script>
+title: how-to-run-qe.md
+excerpt: Quantum ESPRESSO (QE) を利用して，材料の第一原理計算を行う方法を簡単に説明する．
 author: Takeru Nakashima
 collection: portfolio
 date: 2026-03-30
