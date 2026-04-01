@@ -64,6 +64,8 @@ git clone -b v3.1.0 https://github.com/wannier-developers/wannier90.git external
 # ここら辺の確認は，時間ができたらちゃんとやります．困ったら，wannier90に関しては，[Wannier90の公式サイト](https://wannier90.org/)を参照し，手でコンパイルするのが一番確実かもしれません．
 make all
 
+# おそらく，'''make pioud''': Path Integral Molecular Dynamics with PIOUD algorithmもコンパイルが通らないはず．近年のmacOS環境では，オプションコマンド　-pg　がサポートされていないので，PIOUDのMakefileを修正すると簡単にコンパイルできるはず．
+
 # 5. install directoryの指定
 # makefileの中でPREFIXを指定することで，インストール先を変更できる．
 make install PREFIX=../
