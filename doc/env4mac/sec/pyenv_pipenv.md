@@ -38,10 +38,15 @@ date: 2025-06-05
 |------|----------|
 | 初期化（指定バージョンの Python） | `pipenv --python 3.11` |
 | パッケージのインストール | `pipenv install numpy` |
+| パッケージのアンインストール | `pipenv uninstall numpy` |
 | 開発用パッケージのインストール | `pipenv install --dev black` |
 | 仮想環境に入る | `pipenv shell` |
 | 仮想環境内でスクリプト実行 | `pipenv run python main.py` |
 | 依存関係を表示 | `pipenv graph` |
+| 仮想環境（shell）を終了する | `exit` |
+| 仮想環境を削除する.ただし，Pipfile, Pipfile.lockは残る（これは基本慣れないうちはしないほうがいい）| `pipenv --rm` |
+
+`pipenv install`のみをterminal上で実行すると，directory内のPipfile, Pipfile.lockをもとに，必要なパッケージをインストールしてくれる．
 
 ---
 
@@ -66,6 +71,9 @@ pipenv shell
 
 # 6. test.py ファイルを python で実行
 python test.py
+
+# 7. 仮想環境を終了する．
+exit
 ```
 ここで使用する `test.py` を念のために以下のように提案しておく：
 
