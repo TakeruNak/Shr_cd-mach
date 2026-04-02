@@ -41,7 +41,7 @@ date: 2025-06-05
 | パッケージのアンインストール | `pipenv uninstall numpy` |
 | 開発用パッケージのインストール | `pipenv install --dev black` |
 | 仮想環境に入る | `pipenv shell` |
-| 仮想環境内でスクリプト実行 | `pipenv run python main.py` |
+| 仮想環境外でスクリプト実行 | `pipenv run python main.py` |
 | 依存関係を表示 | `pipenv graph` |
 | 仮想環境（shell）を終了する | `exit` |
 | 仮想環境を削除する.ただし，Pipfile, Pipfile.lockは残る（これは基本慣れないうちはしないほうがいい）| `pipenv --rm` |
