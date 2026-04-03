@@ -19,6 +19,7 @@ Quantum ESPRESSOをmacOSで動かすためには，以下のパッケージをho
 | 2 | `gcc` | GNU Compiler Collection (GCC) |
 | 3 | `veclibfort` | Fortranのベクトルライブラリ |
 | 4 | `wget` | ファイルをダウンロードするためのツール |
+| 5 | `libxc` | 交換相関函数のライブラリ （Optional）|
 
 Homebrewを使用して必要なパッケージをインストールする．
    ```bash
@@ -45,7 +46,9 @@ tar -xzf qe-7.4.1-ReleasePack.tar.gz
 cd qe-7.4.1
 
 # 3. MPI versionのコンパイルを行うために必要な環境変数を設定
-./configure MPIF90="mpif90" F90="gfortran" CC=gcc-15 CPP=cpp-15 LAPACK_LIBS="-L/opt/homebrew/Cellar/veclibfort/0.4.3/lib -lveclibFort -lblas -llapack"
+./configure --with-libxc --with-libxc-prefix='/opt/homebrew/opt/libxc' MPIF90="mpif90" F90="gfortran" CC=gcc-15 CPP=cpp-15 LAPACK_LIBS="-L/opt/homebrew/lib -lveclibFort -lblas -llapack"
+# libxcを使用しない場合は，以下のようにしてconfigureを行う．
+./configure MPIF90="mpif90" F90="gfortran" CC=gcc-15 CPP=cpp-15 LAPACK_LIBS="-L/opt/homebrew/lib -lveclibFort -lblas -llapack"
 
 # 4. Quantum ESPRESSOのコンパイル
 make all
