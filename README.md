@@ -27,6 +27,7 @@ date: 2025-06-06
 - 研究関連のテキスト
   * [論文を書くときの注意点](./doc/research/research_technique.md)
   * [論文の読み方](./doc/research/how_to_read_paper.md)
+  * [情報の伝え方](./doc/research/how_to_communicate.md)
   <!---
   * [研究計画書の書き方](./doc/research_plan/research_plan.md)
   * [研究発表の仕方](./doc/presentation/presentation.md)
