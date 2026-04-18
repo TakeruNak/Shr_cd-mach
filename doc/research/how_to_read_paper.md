@@ -69,7 +69,7 @@ copyright: "Copyright (c) 2026 Takeru Nakashima. All rights reserved."
 - [Daniel Solowの「証明の読み方・考え方」](https://amzn.asia/d/032JDnvr)で紹介されている「前進-後退法」
 - [「理科系の作文技術」](https://amzn.asia/d/04487sEh)で紹介されている「paragraph reading」
 - [安宅和人の「イシューからはじめよ」](https://amzn.asia/d/092yKgYh)の「Issue」に対する意識
-- [米森裕二のアブダクション 仮説と発見の論理学](https://amzn.asia/d/0h0KcvCF)の「Peirceのabduction」や「surprisung fact」,「explanatory hypothesis」の概念
+- [米森裕二のアブダクション 仮説と発見の論理学](https://amzn.asia/d/0h0KcvCF)の「Peirceの[abduction](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%96%E3%83%80%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3)」や「surprisung fact」,「explanatory hypothesis」の概念
 
 
 ---
