@@ -29,10 +29,13 @@ copyright: "Copyright (c) 2026 Takeru Nakashima. All rights reserved."
 まずはタイトルとキーワードを確認し，その論文が扱う主要なテーマとスコープ（対象範囲）を把握する．
 
 ## 2. Abstract（要約）の精読
-論文の全体像を掴むため，以下の3点に重点を置いてAbstractを精読する．
-* **Research Issue:** 解決すべき問題・背景は何か？
+論文の全体像を掴むため，以下の4点に重点を置いてAbstractを精読する．
+* **Surprising fact:** 驚愕すべき事実は何か？ ex. 既存の常識を覆すような発見や，予想外の結果など．
+* **Research Issue:** 解決すべき問題・背景は何か？ surprising factを踏まえて，どのような問題意識があるのか．
 * **Statement / Hypothesis:** その問題に対し，どのような主張や仮説を立てているか？
 * **Methodology / Evidence:** その仮説をどのように検証したか？
+
+場合によっては，surprising factとresearch issueが明確に分かれていないこともある．その場合は，surprising factを踏まえて，どのような問題意識があるのかを自分なりに考える．
 
 ## 3. 図表（Figure / Table）の先行チェック 【最重要エビデンスの確認】
 テキストを読み進める前に，図表（モデル図，グラフ，データなど）に目を通す．
@@ -66,6 +69,7 @@ copyright: "Copyright (c) 2026 Takeru Nakashima. All rights reserved."
 - [Daniel Solowの「証明の読み方・考え方」](https://amzn.asia/d/032JDnvr)で紹介されている「前進-後退法」
 - [「理科系の作文技術」](https://amzn.asia/d/04487sEh)で紹介されている「paragraph reading」
 - [安宅和人の「イシューからはじめよ」](https://amzn.asia/d/092yKgYh)の「Issue」に対する意識
+- [米森裕二のアブダクション 仮説と発見の論理学](https://amzn.asia/d/0h0KcvCF)の「Peirceのabduction」や「surprisung fact」,「explanatory hypothesis」の概念
 
 
 ---
