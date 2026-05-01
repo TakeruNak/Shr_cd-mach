@@ -24,6 +24,8 @@ date: 2026-04-06
 * **Supporting Information / Details（根拠・詳細）:** * 主張の後に記述する．Statementよりも抽象度が低く，具体的な事実やデータ．
     * 「なぜその結論になるのか？」という問いに答える形で構成する．
 
+<img src="./image/legget.png" width="300" alt="Leggett's Tree: できる限り文章はシンプルに，詳細情報は後ろに．">
+
 ## 2. 視覚的エビデンス（Graphical Imageによる証明）
 言語的な主張（Statement）には，必ずそれを裏付ける視覚的根拠をセットにする．
 
