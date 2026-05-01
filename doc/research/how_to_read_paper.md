@@ -32,6 +32,7 @@ copyright: "Copyright (c) 2026 Takeru Nakashima. All rights reserved."
 論文の全体像を掴むため，以下の4点に重点を置いてAbstractを精読する．
 * **Surprising fact:** 驚愕すべき事実は何か？ ex. 既存の常識を覆すような発見や，予想外の結果など．
 * **Research Issue:** 解決すべき問題・背景は何か？ surprising factを踏まえて，どのような問題意識があるのか．
+* **Research Question:** 解決すべき問題・背景を踏まえて，どんな具体的な疑問に落とし込んでいるのか？ 
 * **Statement / Hypothesis:** その問題に対し，どのような主張や仮説を立てているか？
 * **Methodology / Evidence:** その仮説をどのように検証したか？
 
