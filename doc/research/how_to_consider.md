@@ -78,4 +78,6 @@ Abductionの形式：
 
 このサイクルを繰り返すことで，研究はより強固な理論へと洗練されていく．
 
+<img src="./image/structure-research.png" width="600" alt="研究の構造">
+
 [🏠 Home](../../README.md)
