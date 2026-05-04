@@ -12,7 +12,7 @@ date: 2026-04-18
 
 # Research Design：パースのアブダクションに基づく探究プロセス
 
-本稿では，[C.S.パース](https://en.wikipedia.org/wiki/Charles_Sanders_Peirce)が提唱した「アブダクション（仮説的推論，Abduction）」をもとにした研究デザインのあり方を整理する．
+本稿では，[C.S.Peirce](https://en.wikipedia.org/wiki/Charles_Sanders_Peirce)が提唱した「アブダクション（仮説的推論，Abduction）」をもとにした研究デザインのあり方を整理する．
 C.S.パースは，科学的探究のプロセスを以下のように定義している．
 
 研究とは，**驚くべき事実（surprising fact）を同定し，それに対する説明仮説（explanatory hypothesis）**を導入（仮説形成：abduction/retroduction）した上で，**演繹（deduction）によって仮説から導き出される命題を導出し，最終的に帰納（induction）**によって各命題を検証するプロセスである．
@@ -28,15 +28,17 @@ ${\rm Surprising\ fact} \rightarrow {\rm Explanatory\ hypothesis} \rightarrow {\
 * **アクション:** * 何が「驚き」なのかを言語化する．
     * その事実が既存のどの理論（Background Knowledge）と矛盾しているのかを明確にする．
     * 単なる例外として片付けず，そこに「隠れた法則」がある可能性を検討する．
+* **補足：** この概念は，Daniel Solowの提唱するFoward-Backward Method（前進-後退法）のBackward Method（後退法）の概念と非常に似ている．また，George Pólyaのhow to solve itに登場するHeuristic reasoning (発見的推論)の概念に非常に似ていると感じた（根本的に，科学的発見のプロセスを一般化した概念がabductionである時点で，具象的な概念に相当するものが複数存在するのは当然の事実かと感じた)．
 
 ## 2. 研究課題（Research Issue）の定式化
 「驚愕の事実」を，学術的に解決すべき「問い」へと昇華させる．
 
 * **定義:** 驚愕の事実を解明することが，その研究分野においてどのような意義（理論的・実用的）を持つのかを客観的に定義すること．
 * **アクション:** * 「現象 $C$ はなぜ起きるのか？」という問いを，既存研究の文脈（リサーチ・ギャップ）の中に位置づける．
+* **補足:** 実際に，説明仮説を考える前に，Research Issueをより具象化する必要性がある．一般的に，*Research Question*と呼ばれ，疑問形式で定義される．Research IssueとExplnatory Hypothesisは表裏一体の関係を持つ．ちなみに，Solowも主張（statement）を証明する際のBackward processを進める際に，抽象質問（abstract question）という概念を導入するが，Research Questionが問題の方向性を決定するのに対し，こちらは抽象化することで，充分条件を明確化するためのプロセス．
 
 ## 3. 説明仮説（Explanatory Hypothesis）の形成【アブダクション】
-驚愕の事実 $C$ を説明するための仮説 $A$ を考案する．
+驚愕の事実 $C$ を説明するための仮説 $A$ を考案する(このプロセスはSolowの"Backward process"やPolyaの"Heurstic reasoning"の一般化された概念に相当する)．
 
 * **パースの推論形式:**
     > 1. 驚愕の事実 $C$ が観察される．
@@ -45,10 +47,11 @@ ${\rm Surprising\ fact} \rightarrow {\rm Explanatory\ hypothesis} \rightarrow {\
 * **ポイント:**  仮説 $A$ は，単なる当てずっぽうではなく，その仮説を導入することで**「不可解だった現象が，筋の通った当たり前の現象に変わる」**ような，飛躍を伴う洞察（Insight）である必要がある．
 
 ## 4. 演繹的予測（Deductive Consequences）
-立てた仮説 $A$ から，他にどのような現象(命題)が導き出されるかを演繹的に推論する．
+立てた仮説 $A$ から，他にどのような現象(命題)が導き出されるかを演繹的に推論する
 
 * **役割:** 仮説を検証可能な形(帰納的テストが行えるよう)に具体化するステップ．
 * **アクション:** 「もし $A$ が正しいなら，条件 $X$ のもとでは結果 $Y$ が得られるはずだ」というテスト可能な予測を導き出す．
+* **補足:** この概念は，Solowの"Forward process"によく似ている．ただし，SolowのForward processがAssumptionから演繹的（deduction）に，Backward processより求まる主張（statement）を証明することを目指す．したがって，出発点と到着点の関係性で見ると，PeirceとSolowのDeductive processとForward Processは別物．
 
 ## 5. 経験的検証（Inductive Verification）【帰納】
 設計した研究手法を用いて，演繹された予測が現実と一致するかを確認(帰納的テスト)する．
