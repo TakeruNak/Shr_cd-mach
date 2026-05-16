@@ -1,0 +1,60 @@
+.
+├── README.md             <-- 全体のトップ（インデックス）
+└── doc/
+    ├── 01_computations/  <-- 💡計算技術
+    │   ├── README.md
+    │   ├── ase/
+    │   │   ├── 250423_visualization_using_ase.md
+    │   │   ├── 250423_what_is_ase.md
+    │   │   ├── ase.md
+    │   │   └── image/
+    │   ├── openmx/
+    │   │   ├── openmx.md
+    │   │   ├── image/    （※日本語の画像名も英語に統一するとエラーを防げます）
+    │   │   └── sec/      （※ここに詳細な設定ファイル群を集約）
+    │   ├── parallel_computing/ <-- 💡タイポ修正
+    │   │   └── parallel_computing_guide.md
+    │   ├── physbo/
+    │   │   └── physbo_guide.md
+    │   ├── quantum_espresso/   <-- 💡タイポ修正＋ケバブケースに統一
+    │   │   ├── image/
+    │   │   ├── quantum_espresso.md
+    │   │   └── sec/
+    │   └── vesta/
+    │       └── vesta.md
+    │
+    ├── 02_external_machine/ <-- 💡外部計算機（スパコン）
+    │   ├── README.md
+    │   └── supercom/
+    │       ├── genkai.md
+    │       ├── tsubame.md
+    │       ├── systemb.md
+    │       ├── image/
+    │       └── sec/      （※systemb_login.md などを格納）
+    │
+    ├── 03_research_hub/     <-- 💡研究ノウハウ・メソッド
+    │   ├── README.md
+    │   └── research/
+    │       ├── how_to_check_trend.md
+    │       ├── how_to_communicate.md
+    │       ├── how_to_consider.md    <-- 💡不要なバックアップ(_bなど)を削除
+    │       ├── how_to_read_paper.md
+    │       ├── how_to_utilized_ai.md <-- 💡utilized-ai を utilized_ai に統一
+    │       ├── how_to_write_proposal.md
+    │       ├── references.md
+    │       ├── research_technique.md
+    │       ├── image/
+    │       └── sec/      （※paper_imrad.md などを格納）
+    │
+    ├── 04_IT/               <-- 💡IT・開発環境
+    │   ├── env4mac/
+    │   │   ├── environment.md
+    │   │   ├── sec/      （※homebrew.md, pyenv.md などを格納）
+    │   │   └── src/      （※test.py）
+    │   └── github/
+    │       └── github.md
+    │
+    └── 05_foundations/      <-- 💡基礎理論（今回の新設枠）
+        ├── README.md         （※何のための基礎理論ノートか、list.mdを昇格）
+        └── theory/          <-- 💡ここに今後の理論ノートを格納していく
+            └── reference_list.md

@@ -9,29 +9,13 @@ date: 2025-06-06
 
 本リポジトリは，cd-mach groupで利用するテキストを入れていきます．
 # 目次
-- 環境構築
+- [環境構築]()
   * [Python を利用した仮想環境](./doc/env4mac/environment.md)
   * [Githubはどうやって使うの？](./doc/github/github.md)
-- 計算技術関連
-  * [Density Functional Theory (DFT) の基礎](./doc/dft/dft.md)
-  * [ASEの利用方法](./doc/ase/ase.md)
-  * [OpenMXの利用方法](./doc/openmx/openmx.md)
-  * [Quantum ESPRESSOの利用法](./doc/quantumespresso/quantumespressso.md)
-  * [VESTAの利用方法](./doc/vesta/vesta.md)
-  * [PhysBOの利用方法](./doc/physbo/physbo_guide.md)
-  * [並列計算の利用方法](./doc/paralle_computing/parallel_computing_guide.md)
-- 外部計算機の使用方法
-  * [東大物性研 SystemB の利用方法](./doc/supercom/systemb.md)
-  * [九州大学 Genkai の利用方法](./doc/supercom/genkai.md)
-  * [Science Tokyo Tsubame の利用方法](./doc/supercom/tsubame.md)
-- 研究関連のテキスト
-  * [論文を書くときの注意点](./doc/research/research_technique.md)
-  * [論文の読み方](./doc/research/how_to_read_paper.md)
-  * [情報の伝え方](./doc/research/how_to_communicate.md)
-  * [トレンドの追い方](./doc/research/how_to_check_trend.md)
-  * [パースのアブダクションに関して（自分用）](./doc/research/how_to_consider.md)
-  * [研究申請書メモ（自分用）](./doc/research/how_to_write_proposal.md)
-  * [参考図書](./doc/research/references.md)
+- [計算技術関連](./doc/01_computations/README.md)
+- [外部計算機の使用方法](./doc/02_external_machine/README.md)
+- [研究ノウハウ](./doc/03_research_hub/README.md)
+- [基礎理論・専門知識](./doc/05_foundations/README.md)
 
   <!---
   * [研究計画書の書き方](./doc/research_plan/research_plan.md)
