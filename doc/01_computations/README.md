@@ -12,12 +12,15 @@ date: 2026-05-16
 ## Basic
 
 * [Density Functional Theory—materials](https://github.com/TakeruNak/DFT_seminar_materials.git)
+* [並列計算の利用方法](./paralle_computing/parallel_computing_guide.md)
 
-## Applications
+## DFT Codes
 
-* [ASEの利用方法](./doc/01_computations/ase/ase.md)
-* [OpenMXの利用方法](./doc/01_computations/openmx/openmx.md)
-* [Quantum ESPRESSOの利用法](./doc/01_computations/quantumespresso/quantumespressso.md)
-* [VESTAの利用方法](./doc/01_computations/vesta/vesta.md)
-* [PhysBOの利用方法](./doc/01_computations/physbo/physbo_guide.md)
-* [並列計算の利用方法](./doc/01_computations/paralle_computing/parallel_computing_guide.md)
+* [OpenMXの利用方法](./openmx/openmx.md)
+* [Quantum ESPRESSOの利用法](./quantumespresso/quantumespressso.md)
+
+## Utilities
+
+* [ASEの利用方法](./ase/ase.md)
+* [VESTAの利用方法](./vesta/vesta.md)
+* [PhysBOの利用方法](./physbo/physbo_guide.md)

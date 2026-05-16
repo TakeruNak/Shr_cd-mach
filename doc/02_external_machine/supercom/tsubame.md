@@ -7,8 +7,8 @@ date: 2025-06-12
 # Copyright (c) 2025-06-12 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../README.md)
 
 # Science Tokyo Tsubame
 
-[🏠 Home](../../README.md)
+[🏠 Home](../README.md)
