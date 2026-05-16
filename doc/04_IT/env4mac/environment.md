@@ -7,7 +7,7 @@ date: 2025-06-05
 # Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../README.md)
 
 # Python 環境構築ガイド
 macOSやLinuxでの開発環境構築に必要なツールのインストール手順を示す．
@@ -27,4 +27,4 @@ macOSやLinuxでの開発環境構築に必要なツールのインストール�
 1. [🐍 pyenvのインストール](./sec/pyenv.md)
 1. [🐍 pyenv&pipenvを利用した仮装環境](./sec/pyenv_pipenv.md)
 
-[🏠 Home](../../README.md)
+[🏠 Home](../README.md)

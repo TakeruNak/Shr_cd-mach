@@ -7,12 +7,14 @@ date: 2026-05-16
 # Copyright (c) 2026-05-16 <Takeru Nakashima>. All rights reserved.
 ---
 
+[🏠 Home](../../README.md)
+
 # Computational Topics
 
 ## Basic
 
 * [Density Functional Theory—materials](https://github.com/TakeruNak/DFT_seminar_materials.git)
-* [並列計算の利用方法](./paralle_computing/parallel_computing_guide.md)
+* [並列計算の利用方法](./parallel_computing/parallel_computing_guide.md)
 
 ## DFT Codes
 
@@ -24,3 +26,5 @@ date: 2026-05-16
 * [ASEの利用方法](./ase/ase.md)
 * [VESTAの利用方法](./vesta/vesta.md)
 * [PhysBOの利用方法](./physbo/physbo_guide.md)
+ 
+[🏠 Home](../../README.md)

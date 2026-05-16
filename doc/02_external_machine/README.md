@@ -7,7 +7,7 @@ date: 2026-05-16
 # Copyright (c) 2026-05-16 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../../README.md)
+[🏠 Home](../../README.md)
 
 # External Machine
 
@@ -16,4 +16,4 @@ date: 2026-05-16
 * [九州大学 Genkai の利用方法](./supercom/genkai.md)
 * [Science Tokyo Tsubame の利用方法](./supercom/tsubame.md)
 
-[🏠 Home](../../../README.md)
+[🏠 Home](../../README.md)
