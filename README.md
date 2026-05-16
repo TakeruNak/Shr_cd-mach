@@ -30,6 +30,7 @@ date: 2025-06-06
   * [情報の伝え方](./doc/research/how_to_communicate.md)
   * [トレンドの追い方](./doc/research/how_to_check_trend.md)
   * [パースのアブダクションに関して（自分用）](./doc/research/how_to_consider.md)
+  * [研究申請書メモ（自分用）](./doc/research/how_to_write_proposal.md)
   * [参考図書](./doc/research/references.md)
 
   <!---
