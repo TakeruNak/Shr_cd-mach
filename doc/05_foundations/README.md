@@ -1,10 +1,32 @@
 ---
-title: README.md
-excerpt: <excerpt or description on this script>
-author: Takeru Nakashima
+title: "基礎理論・参考文献"
+excerpt: "固体物理・群論・数理物理の推薦図書と，オンライン教材へのポインタ."
+author: "Takeru Nakashima"
 collection: portfolio
-date: 2026-05-17
-# Copyright (c) 2026-05-17 <Takeru Nakashima>. All rights reserved.
+date: 2026-10-16
+# Copyright (c) 2026 Takeru Nakashima. All rights reserved.
 ---
 
-* [参考図書](./references.md)
+[🏠 Home](../../README.md)
+
+# 📖 基礎理論・参考文献
+
+計算を回すこと自体は[💡 計算技術](../01_computations/README.md)で足りるが，
+**結果を解釈するには理論の土台が要る**．本セクションは，その土台を固めるための文献を集めたものである．
+
+| ページ | 内容 |
+|---|---|
+| [参考図書リスト](./references.md) | 数理物理・固体物理・群論の推薦図書（コメント付き） |
+
+## 分野別の見取り図
+
+| 分野 | 計算における役割 |
+|---|---|
+| 数理物理学 | 波動関数・演算子・線形代数の扱いの基礎 |
+| 固体物理 | バンド構造・電子相関の理解．計算結果の解釈に直結する |
+| 群論（結晶学） | 空間群・対称性の記述．結晶構造の入力と等価位置の理解 |
+| 群論（物理・化学） | 点群による選択則・軌道の対称性．分光やバンド縮退の解釈 |
+
+---
+
+[🏠 Home](../../README.md)

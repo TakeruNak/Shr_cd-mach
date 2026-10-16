@@ -1,33 +1,39 @@
 ---
-title: terminalの起動
-excerpt: <excerpt or description on this script>
-author: Takeru Nakashima
+title: "Terminal の起動"
+excerpt: "macOS / Linux でターミナルを起動する手順."
+author: "Takeru Nakashima"
 collection: portfolio
 date: 2025-06-05
-# Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
+# Copyright (c) 2025 Takeru Nakashima. All rights reserved.
 ---
-[🏠 Home](../environment.md)
-# 🖥️ Terminalの起動
-macOSやLinuxでは，Terminalを使用してコマンドライン操作を行います，以下の手順でTerminalを起動してください．
 
-- macOSの場合
+[🏠 Home](../../../../README.md) › [🛠️ IT・開発環境](../../README.md) › [Python 環境構築](../environment.md)
 
-    1. Spotlight検索を開く（Command + Space）.
-    2. 「Terminal」と入力し，Enterキーを押します.
+# 🖥️ Terminal の起動
 
-- Linuxの場合
+macOS や Linux では，Terminal（ターミナル）を使ってコマンドライン操作を行う．
+以下の手順で起動する．
 
-    1. アプリケーションメニューを開く．
-    2. 「Terminal」または「端末」と入力し，選択します．
+## macOS の場合
 
+1. Spotlight 検索を開く（`Command + Space`）．
+2. 「Terminal」と入力し，`Enter` キーを押す．
 
-うまくTerminalをひらけた場合は，以下の順番で仮装環境を作ってみてください:
+## Linux の場合
 
-1. Homebrewのインストール 
-2. pyenvのインストール
-3. pyenv & pipenv を利用した仮装環境の構築
+1. アプリケーションメニューを開く．
+2. 「Terminal」または「端末」と入力し，選択する．
 
-を行ってみてください．
+---
 
+## 次にやること
 
-[🏠 Home](../environment.md)
+ターミナルを開けたら，以下の順番で Python の仮想環境を作っていく．
+
+1. [🍺 Homebrew のインストール](./homebrew.md)
+2. [🐍 pyenv のインストール](./pyenv.md)
+3. [🐍 pyenv & pipenv を利用した仮想環境の構築](./pyenv_pipenv.md)
+
+---
+
+[⬅️ Python 環境構築](../environment.md) ｜ [🏠 Home](../../../../README.md)

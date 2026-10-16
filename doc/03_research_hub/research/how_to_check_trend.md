@@ -1,34 +1,48 @@
 ---
-title: how_to_check_trend.md
-excerpt: <excerpt or description on this script>
-author: Takeru Nakashima
+title: "研究トレンドを追うための方法"
+excerpt: "RSS リーダー・SciRate・Editors' Suggestions を使った論文トレンドの確認方法."
+author: "Takeru Nakashima"
 collection: portfolio
 date: 2026-04-06
-# Copyright (c) 2026-04-06 <Takeru Nakashima>. All rights reserved.
+# Copyright (c) 2026 Takeru Nakashima. All rights reserved.
 ---
 
-[🏠 Home](../../../README.md)
+[🏠 Home](../../../README.md) › [🔬 研究ノウハウ](../README.md)
 
 # 研究トレンドを追うための方法
-本稿では，中嶋が普段実践している論文のトレンドの確認方法を紹介する．
 
-**Under construction...**
+本稿では，中嶋が普段実践している論文トレンドの確認方法を紹介する．
 
-## RSS readerの活用．
-RSS readerは，論文のトレンドを把握するための便利なツールで，中嶋は普段以下の二つを中心に利用している．
-- [feedly](https://feedly.com/)
-- [Inoreader](https://www.inoreader.com/)
+> 📝 **Under construction**
 
-RSS readerを利用することで，複数の論文サイトやジャーナルの更新情報を一括で管理できるため，効率的に最新の研究動向を把握することができる．
+---
 
-## SciRateの活用．
-[SciRate](https://scirate.com/)は，[arXiv](https://arxiv.org/)に投稿された論文の評価やコメントを共有するプラットフォーム．arXivをチェックする時間などがない時などに，注目を集めている論文のみを効率的に把握することができる．
+## 1. RSS リーダーの活用
 
-## サボり方
-基本的に各ジャーナルのEditor Suggestionなどを中心的に目を通すことが多い.
+複数の論文サイト・ジャーナルの更新情報を**一箇所に集約**できるため，
+巡回の手間をかけずに最新の研究動向を把握できる．普段は以下の2つを中心に使っている．
 
-> 1. PRB Editors' Suggestions
-> 2. PRL Editors' Suggestions
-> 3. Nature Editors' Highlights
+* [Feedly](https://feedly.com/)
+* [Inoreader](https://www.inoreader.com/)
 
-[🏠 Home](../../../README.md)
+## 2. SciRate の活用
+
+[SciRate](https://scirate.com/) は，[arXiv](https://arxiv.org/) 投稿論文の評価やコメントを共有するプラットフォーム．
+**注目を集めている論文だけを拾える**ため，arXiv を一件ずつチェックする時間がないときに有用である．
+
+## 3. 時間がないときの「サボり方」
+
+網羅性を諦めて，各ジャーナルの編集部による推薦に絞る．
+玉石混交の中から編集部が選別してくれている分，時間対効果が高い．
+
+| 優先度 | 情報源 |
+|---|---|
+| 1 | PRB Editors' Suggestions |
+| 2 | PRL Editors' Suggestions |
+| 3 | Nature Editors' Highlights |
+
+> 💬 読む対象が決まったら，[論文の読み方](./how_to_read_paper.md) のプロセスに移る．
+
+---
+
+[⬅️ 研究ノウハウ](../README.md) ｜ [🏠 Home](../../../README.md)

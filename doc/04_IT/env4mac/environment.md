@@ -1,30 +1,57 @@
 ---
-title: Python 仮装環境構築ガイド
-excerpt: "Pythonの仮装環境構築に関連したことをまとめたコラム."
-author: Takeru Nakashima
+title: "Python 環境構築ガイド"
+excerpt: "macOS / Linux での開発環境構築に必要なツールの導入手順と，その役割分担."
+author: "Takeru Nakashima"
 collection: portfolio
 date: 2025-06-05
-# Copyright (c) 2025-06-05 <Takeru Nakashima>. All rights reserved.
+# Copyright (c) 2025 Takeru Nakashima. All rights reserved.
 ---
 
-[🏠 Home](../README.md)
+[🏠 Home](../../../README.md) › [🛠️ IT・開発環境](../README.md)
 
 # Python 環境構築ガイド
-macOSやLinuxでの開発環境構築に必要なツールのインストール手順を示す．
-本コラム内では，主に以下に挙げているものを中心にそれらの導入と簡単な使用方法を記述する．
 
+macOS や Linux での開発環境構築に必要なツールの導入手順をまとめる．
 
-<!-- |   Software |   Description|
+## 全体像：4つのツールの役割分担
+
+ツールが4つ出てくるが，それぞれ担当する層が違う．この関係を掴んでおくと迷わない．
+
+```
+Terminal   … 操作する窓口
+  └ Homebrew  … マシン全体のソフトウェアを管理（brew install ...）
+      └ pyenv     … Python 本体のバージョンを管理（3.11 / 3.13 ...）
+          └ pipenv    … プロジェクトごとのパッケージを管理（numpy, ase ...）
+```
+
+| ソフトウェア | 役割 |
 |---|---|
-|Terminal   |   コマンドライン（CUI）でのマシーンの操作用ソフトウェア|
-|Homebrew  |  Package管理ソフト．アプリケーションなどのバージョン管理を一括で担う．     |
-| pyenv   |  pythonの仮想環境を構築するためのソフトウェア |
-|  pipenv |  python内でinstallするmoduleを管理する用の仮装環境を構築できるソフトウェア | -->
+| Terminal | コマンドライン（CUI）でマシンを操作するためのソフトウェア |
+| Homebrew | パッケージ管理ソフト．アプリケーションのインストールとバージョン管理を一括で担う |
+| pyenv | Python 本体のバージョンを切り替えるためのソフトウェア |
+| pipenv | プロジェクトごとに，インストールするパッケージを管理する仮想環境を構築するソフトウェア |
 
+## 導入手順
 
-1. [🖥️ Terminalの開き方](./sec/terminal.md)
-1. [🍺 Homebrewのインストール](./sec/homebrew.md)
-1. [🐍 pyenvのインストール](./sec/pyenv.md)
-1. [🐍 pyenv&pipenvを利用した仮装環境](./sec/pyenv_pipenv.md)
+**上から順に実施すること**（下のツールは上のツールに依存している）．
 
-[🏠 Home](../README.md)
+| # | ページ | 内容 |
+|---|---|---|
+| 1 | [🖥️ Terminal の開き方](./sec/terminal.md) | ターミナルを起動する |
+| 2 | [🍺 Homebrew のインストール](./sec/homebrew.md) | パッケージマネージャを入れる |
+| 3 | [🐍 pyenv のインストール](./sec/pyenv.md) | Python のバージョンを管理する |
+| 4 | [🐍 pyenv & pipenv を利用した仮想環境](./sec/pyenv_pipenv.md) | プロジェクトの依存関係を管理する |
+
+## 📁 このディレクトリの構成
+
+```
+env4mac/
+├── environment.md  … 本ページ
+├── sec/            … 各解説ページ
+├── images/         … 図
+└── src/            … 動作確認用のサンプルスクリプト（test.py）
+```
+
+---
+
+[⬅️ IT・開発環境](../README.md) ｜ [🏠 Home](../../../README.md)

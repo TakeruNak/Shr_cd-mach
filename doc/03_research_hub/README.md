@@ -1,29 +1,58 @@
 ---
-title: README.md
-excerpt: <excerpt or description on this script>
-author: Takeru Nakashima
+title: "研究ノウハウ"
+excerpt: "論文の読み方・書き方，研究デザイン，情報伝達など，研究を進める上での型をまとめたセクション."
+author: "Takeru Nakashima"
 collection: portfolio
-date: 2026-05-16
-# Copyright (c) 2026-05-16 <Takeru Nakashima>. All rights reserved.
+date: 2026-10-16
+# Copyright (c) 2026 Takeru Nakashima. All rights reserved.
 ---
 
 [🏠 Home](../../README.md)
 
-# 研究ノウハウ
+# 🔬 研究ノウハウ
 
-## インプット・調査
-  * [論文の読み方](./research/how_to_read_paper.md)
-  * [トレンドの追い方](./research/how_to_check_trend.md)
-  
+> 💡 **研究とは，既存の知識体系における異常・破綻を発見し，それに対する再構造化を行うことである．**
 
-## アウトプット・執筆
-  * [論文を書くときの注意点](./research/research_technique.md)
-  * [情報の伝え方](./research/how_to_communicate.md)
+この定義に立つと，日々の作業が何のためにあるのかが見通せる．
+**論文を読むのは破綻を見つけるため**であり，**仮説を立てるのは体系を組み替えるため**であり，
+**論文を書くのは組み替えた体系を他者に受け入れてもらうため**である．
 
-## 思考法・アイデア
-  * [パースのアブダクションに関して（自分用）](./research/how_to_consider.md)
+すなわち研究は「情報を**入れて**，**考えて**，**出す**」の繰り返しであり，
+本セクションは，その各段階に対応する「型」を集めたものである．
 
-## 研究申請・助成
-  * [研究申請書メモ（自分用）](./research/how_to_write_proposal.md)
+```
+① インプット ──> ② 思考・デザイン ──> ③ アウトプット
+   論文を読む        問いと仮説を作る      論文・申請書を書く，人に伝える
+```
+
+---
+
+## ① インプット：調べる・読む
+
+| ページ | 内容 |
+|---|---|
+| [論文の読み方](./research/how_to_read_paper.md) | 目的に基づいて読む箇所を取捨選択する読解プロセス |
+| [トレンドの追い方](./research/how_to_check_trend.md) | RSS リーダー・SciRate・Editors' Suggestions の活用 |
+| [AI の活用](./research/how_to_utilize_ai.md) | 研究活動における AI 利用についての所感 |
+
+## ② 思考・デザイン：問いと仮説を作る
+
+| ページ | 内容 |
+|---|---|
+| [研究デザイン（アブダクション）](./research/how_to_consider.md) | 驚愕の事実から仮説を立て，検証するまでの循環 |
+| [研究申請書の書き方](./research/how_to_write_proposal.md) | 研究目的のステートメントを組み立てるテンプレート |
+
+## ③ アウトプット：書く・伝える
+
+| ページ | 内容 |
+|---|---|
+| [論文を書くときの注意点](./research/research_technique.md) | 論文の目的と文章構成の型（IMRaD） |
+| [情報の伝え方](./research/how_to_communicate.md) | 結論から話す，図で裏付ける，提案まで含める |
+
+---
+
+> 💬 ②③ のページは中嶋の個人的なノートとして書かれており，
+> C.S. パースの探究の論理を共通の骨格としている．
+> 理論的な背景となる書籍は [📖 基礎理論・参考文献](../05_foundations/README.md) にもまとめてある．
 
 [🏠 Home](../../README.md)

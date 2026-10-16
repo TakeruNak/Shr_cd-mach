@@ -1,14 +1,15 @@
 ---
-title: install_quantumespressso.md
-excerpt: Quantum ESPRESSOのインストール方法について説明します．
-author: Takeru Nakashima
+title: "Quantum ESPRESSO のインストールガイド（macOS）"
+excerpt: "QE 7.5 を macOS (Apple Silicon) 上にビルドする手順と，実際に踏んだビルドエラーの回避策."
+author: "Takeru Nakashima"
 collection: portfolio
 date: 2025-06-24
-# Copyright (c) 2025-06-24 <Takeru Nakashima>. All rights reserved.
+# Copyright (c) 2025 Takeru Nakashima. All rights reserved.
 ---
-[🏠 Home](../quantumespressso.md)
 
-# Quantum ESPRESSSO のインストールガイド
+[🏠 Home](../../../../README.md) › [💡 計算技術](../../README.md) › [Quantum ESPRESSO](../quantum_espresso.md)
+
+# Quantum ESPRESSO のインストールガイド（macOS）
 
 > 本ページの手順は **QE 7.5 / macOS 15.7.9 (Apple Silicon, arm64)** で実際に最後まで通して確認している．
 > 確認時のツールチェーンは Homebrew の open-mpi 5.0.9 / gcc 15.2.0 / veclibfort 0.4.3 / libxc 7.0.0．
@@ -23,7 +24,7 @@ Quantum ESPRESSOをmacOSで動かすためには，以下のパッケージをho
 | 2 | `gcc` | GNU Compiler Collection (GCC) |
 | 3 | `veclibfort` | Fortranのベクトルライブラリ |
 | 4 | `wget` | ファイルをダウンロードするためのツール |
-| 5 | `libxc` | 交換相関函数のライブラリ （Optional）|
+| 5 | `libxc` | 交換相関汎関数のライブラリ （Optional）|
 
 Homebrewを使用して必要なパッケージをインストールする．
    ```bash
@@ -176,4 +177,4 @@ mpirun -np 4 <PREFIX>/bin/pw.x -in si.scf.in
 http://www.cmpt.phys.tohoku.ac.jp/~koretsune/SATL_qe_tutorial/
 などを参照．
 
-[🏠 Home](../quantumespressso.md)
+[⬅️ Quantum ESPRESSO](../quantum_espresso.md) ｜ [🏠 Home](../../../../README.md)

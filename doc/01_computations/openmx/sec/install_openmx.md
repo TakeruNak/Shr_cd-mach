@@ -1,75 +1,86 @@
 ---
-title: install_openmx.md
-excerpt: <excerpt or description on this script>
-author: Takeru Nakashima
+title: "OpenMX のインストールガイド（macOS）"
+excerpt: "Homebrew で依存パッケージを揃え，makefile を編集して OpenMX 3.9 を macOS 上にビルドする手順."
+author: "Takeru Nakashima"
 collection: portfolio
 date: 2025-06-10
-# Copyright (c) 2025-06-10 <Takeru Nakashima>. All rights reserved.
+# Copyright (c) 2025 Takeru Nakashima. All rights reserved.
 ---
-[🏠 Home](../openmx.md)
 
-# OpenMXのインストールガイド
+[🏠 Home](../../../../README.md) › [💡 計算技術](../../README.md) › [OpenMX](../openmx.md)
 
-次の２つの手順に従ってOpenMXをmacに導入してみてください：
-1. homebrewを用いて，openmxをmacOS上で動かすのに必要なパッケージをインストール，
-1. OpenMXのコンパイルの設定ファイル（makefile）を編集・実行．
+# OpenMX のインストールガイド（macOS）
 
-## 🍺 使用するパッケージのインストール  
+次の3ステップで OpenMX を macOS に導入する．
 
-OpenMXをmacOSで動かすためには，以下のパッケージをhomebrewを用いてインストールする必要がある．
+1. **依存パッケージの準備** — Homebrew で MPI・線形代数・FFT のライブラリを入れる
+2. **ビルド** — `makefile` のコンパイラ設定を書き換えて `make`
+3. **動作確認** — 水分子を1本流して出力を確認する
 
-| --- | パッケージ名 | 説明 |
-| --- | --- | --- |
-|1 | open-mpi| open-mpiは，OpenMXのMPI並列計算をサポートするために必要なMPIライブラリ．|
-|2| libomp| libompは，OpenMXのOpenMP並列計算をサポートするために必要なOpenMPライブラリ|
-|3| scalapack| ScaLAPACKは，OpenMXの線形代数計算を高速化するために必要なライブラリ|
-|4| fftw| FFTWは，OpenMXのフーリエ変換を高速化するために必要なライブラリ|
-|5| gcc | GNU Compiler Collectionは，OpenMXのコンパイルに必要なコンパイラ|
-|6| llvm | LLVMは，OpenMXのコンパイルに必要なコンパイラ|
-|7| vesta| VESTAは，OpenMXの出力ファイルを可視化するためのツール|
+> ⚠️ 本手順は Apple Silicon（`/opt/homebrew` 配下）を前提に書いている．
+> Intel Mac の場合はパスを `/usr/local` に読み替えること．
 
-以下に，実際のインストールに必要なコマンドを示す．単に，Terminal上で以下のコマンドを実行することで，必要なパッケージをインストールできる．もし，エラーが出る場合は，Xcodeのversionが古い可能性があるので，Xcodeを最新版に更新することをお勧めする．それでも，問題が解決しない場合は，homebrewの出力結果を確認し，適宜修正を行ってください．
+---
 
-``` bash
-brew install open-mpi libomp libxc scalapack fftw gcc llvm vesta wget
-```
-> libxcはとりあえず，入れるだけ入れておきましょう．
-> 密度汎関数の計算に必要なライブラリで，Quantum ESPRESSOなどの他の計算コードでも利用されています．
-> ここでは不要ですが，入れておいて損はないので，入れておいてください．
-> すでにインストールしているパッケージは省略してください．
+## 1. 🍺 依存パッケージのインストール
 
-## 🔧 インストール方法（makefileの編集）
-OpenMXのインストール方法は，公式サイトの[Download](https://www.openmx-square.org/)からダウンロードし，マニュアルのインストルール手順に従ってインストールする．`wget`コマンドを用いて，以下のようにインストールすることも可能です（wgetコマンドは，urlからファイルから直接ダウンロードするためのコマンドです）．以下の手順に従って，OpenMXをインストールしてください．
+| # | パッケージ | 役割 |
+|---|---|---|
+| 1 | `open-mpi` | MPI 並列計算用のライブラリ |
+| 2 | `libomp` | OpenMP 並列計算用のライブラリ |
+| 3 | `scalapack` | 並列線形代数（固有値問題の求解） |
+| 4 | `fftw` | 高速フーリエ変換 |
+| 5 | `gcc` | GNU Compiler Collection（`gfortran` を含む） |
+| 6 | `llvm` | `libomp` のリンクに使う Clang ツールチェーン |
+| 7 | `vesta` | 出力（電子密度など）の可視化 |
+| 8 | `wget` | ソースコードの取得 |
+| 9 | `libxc` | 交換相関汎関数のライブラリ（OpenMX には必須ではない） |
 
 ```bash
-# 0. homebrewの最新版への更新とsrc directoryを作成
+brew install open-mpi libomp libxc scalapack fftw gcc llvm vesta wget
+```
+
+> 💬 `libxc` は OpenMX のビルドには不要だが，Quantum ESPRESSO など他のコードで使うため入れておいて損はない．
+> すでに入っているパッケージはコマンドから省いてよい．
+
+Homebrew 自体が未導入の場合は，先に [🍺 Homebrew のインストール](../../../04_IT/env4mac/sec/homebrew.md) を参照．
+
+**インストールに失敗する場合**，多くは Xcode（Command Line Tools）のバージョンが古いことが原因である．
+Xcode を最新版に更新したうえで再試行し，それでも解決しない場合は Homebrew の出力メッセージに従って対処する．
+
+## 2. 🔧 ソースコードの取得とビルド
+
+ソースコードは公式サイトの [Download](https://www.openmx-square.org/) から取得する．
+以下は `wget` でコマンドラインから取得する手順である．
+
+### 2.1 ソースと修正パッチの展開
+
+```bash
+# 0. Homebrew を最新化し，作業用ディレクトリを作成
 brew update
 brew doctor
+mkdir -p ~/src && cd ~/src
 
-mkdir -p ~/src
-cd ~/src
-
-# 1. Ver. 3.9をインストールし，ソースコードを展開
+# 1. Ver. 3.9 の取得と展開
 wget https://www.openmx-square.org/openmx3.9.tar.gz
 tar -xvf openmx3.9.tar.gz
 
-# 2. Ver. 3.9のREADME.txtをダウンロードし，
-#    README.txtを参照してインストール手順を確認
+# 2. バグ修正パッチの README を取得（手順の最新情報はここに書かれている）
 wget https://www.openmx-square.org/bugfixed/21Oct17/README.txt
 
-# 3. patchデータのダウンロード
+# 3. パッチの適用
 wget https://www.openmx-square.org/bugfixed/21Oct17/patch3.9.9.tar.gz
 mv ./patch3.9.9.tar.gz openmx3.9/source
 cd openmx3.9/source
 tar zxvf patch3.9.9.tar.gz
 mv kpoint.in ../work/
+```
 
-# 4. makefileを以下のように編集してください．
-#    makefileの場所は，openmx3.9/source/makefileです．
-ls ./makefile  # makefileが存在することを確認
+### 2.2 `makefile` の編集
 
-# vim ./makefile を実行して，以下のように編集してください．
-# CC, FC, LIBの設定を行います．
+`~/src/openmx3.9/source/makefile` を開き，`CC` / `FC` / `LIB` の3変数を以下のように書き換える．
+
+```makefile
 CC = mpicc -O3 -Xpreprocessor -fopenmp \
      -I/opt/homebrew/Cellar/libomp/20.1.7/include \
      -Wno-error=implicit-function-declaration -Dnosse \
@@ -84,83 +95,100 @@ LIB= -L/opt/homebrew/Cellar/scalapack/2.2.2/lib -lscalapack \
      -L/opt/homebrew/Cellar/open-mpi/5.0.7/lib -lmpi_mpifh \
      -L/opt/homebrew/Cellar/llvm/20.1.7/lib -lomp -lpthread \
      -L/opt/homebrew/Cellar/gcc/15.1.0/lib/gcc/15 -lgfortran
-
-# CC のincludeディレクトリの指定部分に，-fcommon オプションを追加します．
-
-# 修正前）CC    += -I$(LIBELPADIR)
-CC    += -I$(LIBELPADIR) -fcommon
-
-# 5. makeコマンドでコンパイル
-make clean # 念のために，以前のビルドをクリーンアップ
-make all
-
-# 6. インストール完了
-make install
-cd ../work
-ls -l openmx # OpenMXの実行ファイルが生成されていることを確認
-
-
-# 7. OpenMXの実行ファイルを確認
-# otool -L openmx
-
 ```
 
-homebrew のパッケージを利用しているので，パッケージのバージョンは各自で確認して，修正してください．
+さらに，`LIBELPADIR` のインクルード指定に `-fcommon` を追加する．
 
-## ✅ 使用例
+```diff
+-CC    += -I$(LIBELPADIR)
++CC    += -I$(LIBELPADIR) -fcommon
+```
 
-入力ファイルを用意し，OpenMXを実行してみましょう．以下は，水分子の構造最適化の計算例です．以下の手順に従って，計算を行ってみてください．難しい場合は，[OpneMXの公式ドキュメントやマニュアル](https://www.openmx-square.org/openmx_man3.9jp/node1.html)を参照してください．
+> ⚠️ **上記のバージョン番号はそのままでは通らない．**
+> Homebrew のパッケージは頻繁に更新されるため，`ls /opt/homebrew/Cellar/<package>/` で
+> 実際に入っているバージョンを確認し，自分の環境の値に置き換えること．
+
+### 2.3 コンパイル
 
 ```bash
-# 0. Homeディレクトリに移動し，テスト用のディレクトリを作成
-cd ~
-mkdir -p ./test_openmx
-cd ./test_openmx
+make clean   # 念のため以前のビルドをクリーンアップ
+make all
+make install
 
-# 1. OpenMXの構造ファイルをコピー
-mkdir input
-cp ~/src/openmx3.9/work/H2O.in ./input/H2O.in
-cat "data.path ~/src/openmx3.9/DFT_DATA19/" >> ./input/H2O.in
+cd ../work
+ls -l openmx   # 実行ファイルが生成されていることを確認
 ```
 
-ここで，openmxを実行するためのスクリプトファイルを書いてみましょう．`go.sh`という名前で以下の内容を記述します（Terminalに直接`mpirun -np 1 ~/src/openmx3.9/work/openmx ./input/H20.dat -nt 1 > ./output.std`と入力実行しても構いませんが，job.scriptの書く練習だと思って，書いみてください．）．
+リンクされている共有ライブラリを確認したい場合は `otool -L openmx` を使う．
+
+## 3. ✅ 動作確認：水分子の計算
+
+付属のサンプル入力 `H2O.dat` を使って，1本流してみる．
+
+```bash
+# 0. テスト用ディレクトリを作成
+mkdir -p ~/test_openmx/input && cd ~/test_openmx
+
+# 1. サンプル入力をコピー
+cp ~/src/openmx3.9/work/H2O.dat ./input/H2O.dat
+
+# 2. 擬ポテンシャル・基底データの場所を指定
+#    入力ファイル中の DATA.PATH 行を，実際の DFT_DATA19 のパスに書き換える
+sed -i '' "s|^DATA.PATH.*|DATA.PATH  $HOME/src/openmx3.9/DFT_DATA19|" ./input/H2O.dat
+grep DATA.PATH ./input/H2O.dat   # 書き換わったことを確認
+```
+
+次に，実行用のスクリプト `go.sh` を用意する．
+ターミナルに直接コマンドを打っても動くが，外部計算機ではジョブスクリプトを書くことになるため，
+ここで練習しておくとよい．
 
 ```bash
 #!/bin/bash
-# OpenMXの実行スクリプト
+# OpenMX 実行スクリプト
+# -np : MPI プロセス数，-nt : OpenMP スレッド数
 mpirun -np 1 ~/src/openmx3.9/work/openmx ./input/H2O.dat -nt 1 > ./output.std
-
-# 上記の-npオプションは，使用するプロセス数を指定;
-# -ntオプションは，スレッド数を指定する．
-# 出力はoutput.stdにリダイレクトされる．
-# 必要に応じて-npや-ntの値を変更してください．
 ```
-> 並列計算には，MPI計算とOpenMP計算の2つの方法がある．ざっくりとした説明をすると，MPI計算は複数のプロセスを用いて計算を行う方法で，OpenMP計算は1つのプロセス内で複数のスレッドを用いて計算を行う方法．つまり，-npと-ntのオプションでの数字は，それぞれプロセス数とスレッド数を指定し，増やすことで並列数を増やすことができる．  
-> プロセスとスレッドの違いとは，（ざっくりいうと）プロセスは独立した実行単位であり，スレッドはプロセス内での実行単位．プロセスはメモリ空間を共有しないが，スレッドは同じメモリ空間を共有する．
 
-**Macの中には複数の小さいパソコン（CPU）が存在し，小さいパソコンに仕事を分けて計算するのがMPI計算で，1つの小さいパソコンの中で仕事を分けて計算するのがOpenMP計算．**
-
-実行権限を付与して，スクリプトを実行します．
-
-```bash 
+```bash
 chmod 744 go.sh
 ./go.sh
 ```
-初めての`mpirun`コマンドの実行では，実行許可の確認が求められることがあります．その場合は，許可を与えてください．
 
+> 💬 初回の `mpirun` 実行時に，macOS からネットワーク接続の許可を求められることがある．許可してよい．
 
-計算が終わると，`output.std`を含む出力ファイルが生成されます．
-試しに，`vim h2o.out`などで出力ファイルを確認してみましょう．`open h2o.tden.cube`などをterminal上で実行すると，VESTAなどの可視化ツールでH2Oのsimulationで求めたtotal electron densityを確認できます．他にもファイルの中身を確認してみてください．
+### 3.1 並列数（`-np` と `-nt`）の意味
 
-(*詳しい説明．丁寧な文章の推敲はいづれします．*）
+並列計算には **MPI** と **OpenMP** の2通りがあり，`-np` と `-nt` はそれぞれに対応する．
 
-## 注意点
-OpenMXのインストールは，macOSのバージョンや使用するコンパイラによって異なる場合がある．特に，最新のmacOSではコンパイルエラーが発生することがあるため，注意が必要．以下の点に留意．
-- OpenMXのバージョンによっては，特定のライブラリやコンパイラのバージョンが必要になることがある．
-- コンパイル時にエラーが発生した場合は，Makefileの設定や依存関係を確認．
-- OpenMXの公式ドキュメントやフォーラムを参照して，最新の情報を確認することをお勧め．
+| オプション | 指定するもの | 単位の性質 |
+|---|---|---|
+| `-np` | MPI プロセス数 | 独立した実行単位．メモリ空間を共有**しない** |
+| `-nt` | OpenMP スレッド数 | プロセス内の実行単位．同じメモリ空間を**共有する** |
 
+> 💡 **イメージ**：Mac の中には複数の小さなパソコン（CPU コア）が入っている．
+> 小さなパソコン同士に仕事を分けるのが MPI，1つの小さなパソコンの中で仕事を分けるのが OpenMP．
 
-(最新のmacbookproだと，うまくコンパイルできないことが多いらしい．)
+詳細は [並列計算の利用方法](../../parallel_computing/parallel_computing_guide.md) を参照．
 
-[🏠 Home](../openmx.md)
+### 3.2 出力の確認
+
+計算が終わると `output.std` のほか，系名を接頭辞とした各種ファイルが生成される．
+
+```bash
+vim h2o.out          # 全エネルギー・構造などの主要な結果
+open h2o.tden.cube   # 全電子密度を VESTA で可視化
+```
+
+## 4. ⚠️ うまくいかないとき
+
+OpenMX のビルドは macOS のバージョンとコンパイラの組み合わせに敏感で，特に新しい macOS では
+コンパイルエラーが起きやすい（最新の MacBook Pro ではビルドが通りにくいという報告がある）．
+
+* バージョンの組み合わせによって，要求されるライブラリ・コンパイラが異なることがある．
+* コンパイルエラーが出た場合は，まず `makefile` のパス指定と依存関係を疑う．
+* 解決しない場合は，公式の[マニュアル](https://www.openmx-square.org/openmx_man3.9jp/node1.html)と
+  [フォーラム](https://www.openmx-square.org/forum/patio.cgi)を確認する．
+
+---
+
+[⬅️ OpenMX](../openmx.md) ｜ [🏠 Home](../../../../README.md)

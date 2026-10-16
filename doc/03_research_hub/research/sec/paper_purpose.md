@@ -1,22 +1,36 @@
 ---
-title: paper_purpose.md
-excerpt: <excerpt or description on this script>
-author: Takeru Nakashima
+title: "研究論文の目的とは？"
+excerpt: "研究論文が何のために書かれるのか，そしてなぜ文章構成に型が存在するのか."
+author: "Takeru Nakashima"
 collection: portfolio
 date: 2025-07-01
-# Copyright (c) 2025-07-01 <Takeru Nakashima>. All rights reserved.
+# Copyright (c) 2025 Takeru Nakashima. All rights reserved.
 ---
 
-[🏠 Home](../research_technique.md)
+[🏠 Home](../../../../README.md) › [🔬 研究ノウハウ](../../README.md) › [論文を書くときの注意点](../research_technique.md)
 
-## 研究論文（研究計画書）の目的とは？
+# 研究論文（研究計画書）の目的とは？
 
-文章は何のために書くのか？ その答えは，自身の主張を他者に伝えるためである．
-研究論文もその例に漏れない.
+## 問い：文章は何のために書くのか？
 
- **研究論文は，自身が行った研究成果を他者に納得，理解してもらうことを目的に書かれている.**
+答えは，**自身の主張を他者に伝えるため**である．研究論文もその例に漏れない．
 
-ここで重要な点は，上記の目的を達成するために，研究論文の文章構成には，一定の型が存在するということである．
-よく例に挙げられるのは，**IMRaD**と**ハンバーガーエッセンス**などである．次節では，IMRaDを中心にご説明する.
+> 💡 **研究論文は，自身が行った研究成果を他者に納得・理解してもらうことを目的に書かれている．**
 
-[🏠 Home](../research_technique.md)
+## だから「型」がある
+
+ここで重要なのは，**上記の目的を達成するために，研究論文の文章構成には一定の型が存在する**ということである．
+型に従うことで，読者は「どこに何が書いてあるか」を探さずに済み，書き手は伝えるべき要素の漏れを防げる．
+
+よく例に挙げられるのは以下の2つである．
+
+| 型 | 概要 |
+|---|---|
+| **IMRaD** | Introduction / Methods & Methodology / Results / Discussion の4部構成．論文全体の型 |
+| **ハンバーガー・エッセンス** | 主張を導入と結論で挟む構成．段落・小節レベルの型 |
+
+次節では，**IMRaD** を中心に説明する．
+
+---
+
+[⬅️ 論文を書くときの注意点](../research_technique.md) ｜ [🏠 Home](../../../../README.md)

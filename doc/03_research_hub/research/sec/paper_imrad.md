@@ -1,73 +1,83 @@
 ---
-title: paper_imrad.md
-excerpt: <excerpt or description on this script>
-author: Takeru Nakashima
+title: "書き方の型，IMRaD とは？"
+excerpt: "論文の文章構成の型である IMRaD の各セクションに，何を書くべきかを整理する."
+author: "Takeru Nakashima"
 collection: portfolio
 date: 2025-07-01
-# Copyright (c) 2025-07-01 <Takeru Nakashima>. All rights reserved.
+# Copyright (c) 2025 Takeru Nakashima. All rights reserved.
 ---
 
-[🏠 Home](../research_technique.md)
+[🏠 Home](../../../../README.md) › [🔬 研究ノウハウ](../../README.md) › [論文を書くときの注意点](../research_technique.md)
 
-# IMRaDとは？
-IMRaDとは，Introduction, Methods & Methodology, Results, and Discussionの頭文字に由来する，論文の文章構成の型の一つである．
-多くの研究論文はこのIMRaDの構成に従って書かれており，各項目は以下のような内容を含む．
+# 書き方の型，IMRaD とは？
 
-  - Introduction:
-    * 研究の背景
-    * 研究の目的
-    * 研究の抽象的主題
-  - Methods & Methodology:
-    * 研究の方法
-    * 研究の方法論
-    * 研究の具象的対象
-  - Results:
-    * 研究の結果,解釈
-  - Discussion:
-    * 研究の結果に対するさらなる解釈
-    * 今後の研究課題
+**IMRaD** とは，**I**ntroduction, **M**ethods & Methodology, **R**esults, and **D**iscussion の頭文字に由来する，
+論文の文章構成の型の1つである．多くの研究論文はこの構成に従って書かれている．
 
-以下に，各項目の内容を詳しく説明する．特に，Introduction, Methods & Methodologyに注目して述べたい．
+## 全体像：抽象と具象の往復
+
+IMRaD の各セクションは，**抽象度の軸で見ると往復構造**になっている．
+この対応を意識すると，どのセクションに何を書くべきかが決まる．
+
+| セクション | 抽象度 | 中心的な問い | 主な内容 |
+|---|---|---|---|
+| **Introduction** | 抽象 | なぜこの研究が必要／重要なのか | 研究の背景，目的，抽象的主題 |
+| **Methods & Methodology** | 具象 | 何を，どうやって調べるのか | 研究の対象，方法，方法論 |
+| **Results** | 具象 → 抽象 | 何が分かったのか | 研究の結果とその解釈 |
+| **Discussion** | 抽象 | それは何を意味するのか | さらなる解釈，意義と限界，今後の課題 |
+
+以下，特に **Introduction** と **Methods & Methodology** に注目して述べる．
+
+---
 
 ## 🔰 Introduction
-「研究が，なぜ必要なのか？なぜ重要なのか?」
 
-研究論文は他者に読まれることを前提としているため，読者が興味を持つような内容でなければならない.
-読者の興味を惹くために，研究の意義となる部分を先行研究を調査することで示すのが一般的な方法である．
+> **問い：「研究が，なぜ必要なのか？ なぜ重要なのか？」**
 
-  - 研究の背景
-    - 研究意義
-    * Literature Review（主題に関連する先行研究の調査)
-      * 先行研究の調査結果
-      * 先行研究の限界，問題点，不足点，課題etc.
+研究論文は他者に読まれることを前提としているため，読者が興味を持つ内容でなければならない．
+読者の興味を惹くには，**先行研究を調査することで研究の意義を示す**のが一般的な方法である．
+
+* **研究の背景**
+    * 研究意義
+    * **Literature Review**（主題に関連する先行研究の調査）
+        * 先行研究の調査結果
+        * 先行研究の限界，問題点，不足点，課題 etc.
     * 研究主題の社会的重要性
-  - 研究の目的
+* **研究の目的**
     * Research Question，抽象的な問い → 研究の主題
-    * 軽く研究の (具体的な事象)
+    * 研究の具体的な事象への軽い言及
 
-**Literature Reviewの結果から自身の研究の重要性と主題を述べる.**
+> 💡 **Literature Review の結果から，自身の研究の重要性と主題を述べる．**
 
-## 🛠️  Methods & Methodology
-Methods & Methodologyでは，研究の具体的な対象と方法論を述べる．Introductionで抽象的な研究主題（Research Question）を述べた後，Methods & Methodologyでは，その研究主題を解決するためにどのような対象と方法を用いるのかを具体的に述べる．
+## 🛠️ Methods & Methodology
 
-  * 研究の具体的対象
+Introduction で抽象的な研究主題（Research Question）を述べた後，
+ここでは**その主題を解決するためにどのような対象と方法を用いるのか**を具体的に述べる．
+
+* **研究の具体的対象**
     * 研究の対象となるデータ，系，物質，現象
     * 数理モデル etc.
-  * 研究の方法論
-    * 研究の方法（第一原理計算 DFT, モデル計算, 実験etc.）
-    * Literature Reviewを通して，適切な方法論，フレームワークを選ぶ．
+* **研究の方法論**
+    * 研究の方法（第一原理計算 DFT，モデル計算，実験 etc.）
+    * Literature Review を通して，適切な方法論・フレームワークを選ぶ
 
-重要なことは，Introduction で提示した抽象的な研究主題を取り扱うための，具体的な研究対象とその方法・方法論（フレームワーク）をここで述べる必要性があるということである．
+重要なのは，**Introduction で提示した抽象的な研究主題を取り扱うための，
+具体的な研究対象とその方法・方法論（フレームワーク）をここで述べる必要がある**という点である．
 
-**Literature Reviewを通して，どのように研究主題を取り扱うか（対象，方法，方法論）を明示する．**
+> 💡 **Literature Review を通して，どのように研究主題を取り扱うか（対象，方法，方法論）を明示する．**
 
 ## 📝 Results
-Methods & Methodologyで提案された研究方法から得られた結果を述べる．具体的には，その結果からどのような解釈が得られ，抽象的な主題に対して何が言えるかを述べる．
 
- **研究には，二種類のタイプが存在する；(1) 仮説検証型，（2）仮説発見型 どちらのタイプの研究かを意識して内容をまとめると良い．**
+Methods & Methodology で提案した方法から得られた結果を述べる．
+具体的には，その結果からどのような解釈が得られ，**抽象的な主題に対して何が言えるか**を述べる．
+
+> 💡 **研究には2種類のタイプが存在する：(1) 仮説検証型，(2) 仮説発見型．**
+> どちらのタイプの研究かを意識して内容をまとめるとよい．
 
 ## 💻 Discussion
-Discussionでは，Resultsで得られた結果の解釈をさらに深め，研究の意義や限界，今後の研究課題などを述べる
 
+Results で得られた結果の解釈をさらに深め，研究の意義や限界，今後の研究課題などを述べる．
 
-[🏠 Home](../research_technique.md)
+---
+
+[⬅️ 論文を書くときの注意点](../research_technique.md) ｜ [🏠 Home](../../../../README.md)

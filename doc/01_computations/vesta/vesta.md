@@ -1,31 +1,50 @@
 ---
-title: VESTA
-excerpt: <excerpt or description on this script>
-author: Takeru Nakashima
+title: "VESTA 利用ガイド"
+excerpt: "結晶・分子構造の可視化と解析を行う VESTA の導入方法."
+author: "Takeru Nakashima"
 collection: portfolio
 date: 2025-06-06
-# Copyright (c) 2025-06-06 <Takeru Nakashima>. All rights reserved.
+# Copyright (c) 2025 Takeru Nakashima. All rights reserved.
 ---
 
-[🏠 Home](../../../README.md)
+[🏠 Home](../../../README.md) › [💡 計算技術](../README.md)
 
-# Vesta
-VESTA は、結晶構造や分子構造の可視化と解析を行うためのソフトウェア．
-主に結晶学，材料科学，化学の研究者に利用されている．VESTA は，3D 表示，等高線図，断面図，電子密度分布の可視化など，多様な機能を提供する．
+# VESTA 利用ガイド
 
-## インストール手順
+[VESTA](https://jp-minerals.org/vesta/jp/) は，**結晶構造や分子構造の可視化と解析**を行うソフトウェアである．
+結晶学・材料科学・化学の分野で広く使われており，3D 表示のほか，等高線図，断面図，
+電子密度分布の可視化など多様な機能を備える．
 
-``` bash
-# VESTA のインストール (brewを使用している場合)
-$ brew install vesta
+計算との関係では，主に次の2つの用途で使う．
 
-# 下記のvestaコマンドを~/.zshrcに追加しておくと便利
-$ cat <<EOF >> ~/.zshrc
+| 用途 | 具体例 |
+|---|---|
+| **入力の下ごしらえ** | データベースから取得した構造の確認，スーパーセルの構築，ファイル形式の変換 |
+| **出力の可視化** | OpenMX の `*.cube`，QE の電荷密度など，計算結果の空間分布を見る |
+
+---
+
+## インストール手順（macOS）
+
+```bash
+# 1. Homebrew でインストール
+brew install vesta
+
+# 2. ターミナルから起動できるよう ~/.zshrc にエイリアスを追加しておくと便利
+cat <<'EOF' >> ~/.zshrc
 alias vesta='open -a /Applications/VESTA.app'
 EOF
 
-# VESTA の起動
-$ vesta
+# 3. 設定を読み込んで起動
+source ~/.zshrc
+vesta
 ```
 
-[🏠 Home](../../../README.md)
+> 💬 エイリアスを登録しておくと，`open hoge.cube` あるいは Finder からのダブルクリックで
+> そのまま VESTA が開くようになる．OpenMX の出力確認が一気に楽になる．
+
+Homebrew が未導入の場合は [🍺 Homebrew のインストール](../../04_IT/env4mac/sec/homebrew.md) を参照．
+
+---
+
+[⬅️ 計算技術](../README.md) ｜ [🏠 Home](../../../README.md)
