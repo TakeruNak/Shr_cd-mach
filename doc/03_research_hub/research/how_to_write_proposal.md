@@ -7,7 +7,7 @@ date: 2026-05-16
 # Copyright (c) 2026-05-16 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
 
 > 💡 **自分用ノート**
 
@@ -61,4 +61,4 @@ C.S. Peirce（パース）の「科学的発見に至るプロセス」をパッ
 
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)

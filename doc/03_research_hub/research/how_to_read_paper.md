@@ -7,7 +7,7 @@ date: 2026-04-02
 copyright: "Copyright (c) 2026 Takeru Nakashima. All rights reserved."
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
 
 # 論文読解プロセス：効率と本質の追求
 
@@ -69,4 +69,4 @@ copyright: "Copyright (c) 2026 Takeru Nakashima. All rights reserved."
 
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)

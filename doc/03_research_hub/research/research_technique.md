@@ -7,7 +7,7 @@ date: 2025-07-01
 # Copyright (c) 2025-07-01 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
 
 # 論文を書く時の注意点
 研究室に配属された学生の皆さんは，研究活動を進めていくと，研究論文や研究計画書を書く機会に必ず出会うと思う．
@@ -22,4 +22,4 @@ date: 2025-07-01
 2. [研究データ管理](./sec/data_management.md)
 --->
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)

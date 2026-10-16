@@ -6,7 +6,7 @@ collection: portfolio
 date: 2026-04-18
 # Copyright (c) 2026-04-18 <Takeru Nakashima>. All rights reserved.
 ---
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
 **自分用ノート**
 
 # Research Design：パースのアブダクションに基づく探究プロセス
@@ -68,4 +68,4 @@ $${\rm Surprising\ fact} \rightarrow {\rm Explanatory\ hypothesis} \rightarrow {
 
 <img src="./image/structure-research.png" width="600" alt="研究の構造">
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)

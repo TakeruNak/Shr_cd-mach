@@ -7,7 +7,7 @@ date: 2025-06-06
 # Copyright (c) 2025-06-06 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
 
 # ASE利用ガイド
 ASE（Atomic Simulation Environment）は，原子スケールのシミュレーションを行うためのPythonライブラリ．ASEを利用することで，分子動力学や量子化学計算など，様々なシミュレーションを効率的に行うことができる．
@@ -16,4 +16,4 @@ ASE（Atomic Simulation Environment）は，原子スケールのシミュレー
 1. [ASEとは何ですか?](250423_what_is_ase.md)
 1. [ASEを利用したモデル構造の可視化](250423_visualization_using_ase.md)
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)

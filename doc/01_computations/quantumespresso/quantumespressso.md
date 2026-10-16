@@ -7,7 +7,7 @@ date: 2025-06-24
 # Copyright (c) 2025-06-24 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
 
 # Quantum Espresso 利用ガイド
 
@@ -15,4 +15,4 @@ date: 2025-06-24
 2. [Quantum ESPRESSOとはなんぞや？](./sec/what-is-qe.md)
 3. [Quantum ESPRESSOで計算を実行してみよう](./sec/how-to-run-qe.md)
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)

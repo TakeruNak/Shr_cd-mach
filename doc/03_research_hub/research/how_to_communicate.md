@@ -7,7 +7,7 @@ date: 2026-04-06
 # Copyright (c) 2026-04-06 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
 
 # 情報伝達・コミュニケーションの指針
 
@@ -45,4 +45,4 @@ date: 2026-04-06
 
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)

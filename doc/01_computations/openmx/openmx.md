@@ -5,7 +5,7 @@ collection: portfolio
 data: 2025-04-08 10:52
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
 
 # OpenMX 利用ガイド
 
@@ -16,4 +16,4 @@ data: 2025-04-08 10:52
 1. [基本的なパラメタ設定の勘所・収束のスキル．](./sec/param_info.md)
 1. [各種計算ガイド](./sec/calc_method.md)
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)

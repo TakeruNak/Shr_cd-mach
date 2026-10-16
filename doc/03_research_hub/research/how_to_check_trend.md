@@ -7,7 +7,7 @@ date: 2026-04-06
 # Copyright (c) 2026-04-06 <Takeru Nakashima>. All rights reserved.
 ---
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
 
 # 研究トレンドを追うための方法
 本稿では，中嶋が普段実践している論文のトレンドの確認方法を紹介する．
@@ -31,4 +31,4 @@ RSS readerを利用することで，複数の論文サイトやジャーナル�
 > 2. PRL Editors' Suggestions
 > 3. Nature Editors' Highlights
 
-[🏠 Home](../../README.md)
+[🏠 Home](../../../README.md)
