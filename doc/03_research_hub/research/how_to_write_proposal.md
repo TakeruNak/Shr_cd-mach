@@ -29,17 +29,22 @@ date: 2026-05-16
 研究目的の文章は，[探究の四角形](./how_to_consider.md#1-全体像探究の四角形) をそのまま言葉にしたものである．
 
 ```
-              問い側                                答え側
-抽象   [A] 研究課題（Research Issue） ── 説明する ──▶ [D] 一般的なメカニズム
-           ▲ 範囲を広げる                               ▲ 範囲を広げる
-具体   驚愕の事実（Surprising Fact） ── 仮説を立てる ─▶ [B] 説明仮説
-                                                      ▲│ 確かめる / 予測する
-                                                      │▼
-                                                    [C] 検証
+           QUESTION SIDE                          ANSWER SIDE
+
+ABSTRACT   [A] Research Issue  <--- explains ---  [D] General mechanism
+               ^                                      ^
+               | generalize                           | generalize
+               |                                      |
+CONCRETE   Surprising Fact     <--- explains ---  [B] Explanatory hypothesis
+           + Research Question                        |       ^
+                                            deduction |       | induction
+                                                      v       |
+                                                  [C] Prediction & observation
 ```
 
-* 下の段（驚愕の事実 → [B] ⇄ [C]）がパースの推論そのもの
+* 下の段がパースの推論そのもの（アブダクションで [B] を見つけ，演繹と帰納で [C] と往復する）
 * 縦の矢印が，事実と仮説を研究として意味のある大きさに広げる作業
+* 研究1本で確かめられるのは下の段だけで，[D] は [A] 全体への提案である
 * 研究目的は，**この四角形が閉じる**と宣言する文章である
 
 ### 1.2 記述テンプレート
