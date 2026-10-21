@@ -44,15 +44,15 @@ IMRaD の各セクションは，**抽象度の軸で見ると往復構造**に�
         * 先行研究の限界，問題点，不足点，課題 etc.
     * 研究主題の社会的重要性
 * **研究の目的**
-    * Research Question，抽象的な問い → 研究の主題
+    * Research Issue（広い未解決の課題）と，Research Question（この研究で答える問い）
     * 研究の具体的な事象への軽い言及
 
 > 💡 **Literature Review の結果から，自身の研究の重要性と主題を述べる．**
 
 ## 🛠️ Methods & Methodology
 
-Introduction で抽象的な研究主題（Research Question）を述べた後，
-ここでは**その主題を解決するためにどのような対象と方法を用いるのか**を具体的に述べる．
+Introduction で述べた研究主題（Research Issue / Research Question）に対し，
+**どのような対象と方法を用いて答えるのか**を具体的に述べる．
 
 * **研究の具体的対象**
     * 研究の対象となるデータ，系，物質，現象
@@ -60,9 +60,6 @@ Introduction で抽象的な研究主題（Research Question）を述べた後�
 * **研究の方法論**
     * 研究の方法（第一原理計算 DFT，モデル計算，実験 etc.）
     * Literature Review を通して，適切な方法論・フレームワークを選ぶ
-
-重要なのは，**Introduction で提示した抽象的な研究主題を取り扱うための，
-具体的な研究対象とその方法・方法論（フレームワーク）をここで述べる必要がある**という点である．
 
 > 💡 **Literature Review を通して，どのように研究主題を取り扱うか（対象，方法，方法論）を明示する．**
 
